@@ -22,7 +22,12 @@
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Unidad 01: Lenguajes de Marcas</a></li>
-   <li><a href="antes_de_comenzar.html" class="no-ch">Antes de comenzar...</a></li>
+   <li><a href="antes_de_comenzar.html" class="daddy">Antes de comenzar...</a>
+   <ul class="other-section">
+      <li><a href="datos_y_formatos.html" class="no-ch">Datos y formatos</a></li>
+      <li><a href="archivos_binarios_y_archivos_planos.html" class="no-ch">Archivos binarios y archivos planos</a></li>
+   </ul>
+   </li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
    <ul class="other-section">
       <li><a href="concepto.html" class="no-ch">Concepto</a></li>
@@ -97,6 +102,27 @@
         &lt;formato&gt;MP3&lt;/formato&gt; 
 	&lt;localizacion&gt;Varios CD5 &lt;/localizacion&gt;
 &lt;/album&gt;</pre>
+<p>De manera general, un documento XML consta de:</p>
+<ul>
+<li>Prólogo. Se trata de la primera zona del documento y sirve para describir<br />qué tipo de documento es. Es similar al apartado head de HTML. Puede<br />contener:
+<ul>
+<li>Declaración del documento, que permite indicar el tipo de documento<br />XML que es.</li>
+<li>Instrucciones para el procesado del documento</li>
+<li>Comentarios</li>
+<li>Indicación del documento DTD, XSD o Relax NG para comprobar si el<br />mismo es válido según las reglas impuestas por dicho documento.</li>
+<li>Indicación de otros documentos que afectan al actual, como por<br />ejemplo los documentos XSLT que permiten especificar la forma en la<br />que el documento se debe mostrar en pantalla.</li>
+</ul>
+</li>
+<li>Elemento raíz. Todo el contenido del documento debe de estar incluido en<br />el llamado elemento raíz, se trata de un elemento obligatorio que se abre<br />tras el prólogo y se debe cerrar justo al final. De este modo cualquier<br />elemento está dentro del elemento raíz. Contiene:
+<ul>
+<li>Más elementos</li>
+<li>Atributos</li>
+<li>Texto normal</li>
+<li>Entidades</li>
+<li>Comentarios<br /><br /></li>
+</ul>
+</li>
+</ul>
 <h3>XML es case sensitive</h3>
 <p>XML, a diferencia de HTML, es "case sensitive", es decir, trata a las mayúsculas y las minúsculas como caracteres diferentes. Si un elemento de XML está definido como "Elemento", no podemos usar "elemento" para referirnos a él:</p>
 <p class="titulillo">Ejemplo con Case sensitive y solapamiento.</p>
@@ -130,6 +156,8 @@
 <p>Las construcciones como etiquetas, referencias de entidad y declaraciones (ya veremos que es cada cosa) se denominan "marcas". Estas son las parte del documento XML que entiende el parser. El resto del documento que se encuentra entre las marcas, son los datos entendible por las personas. Las marcas en un documento XML son aquellas partes que empiezan con "&lt;" y que acaban con "&gt;" (por ejemplo, &lt;Hola&gt;, o bien, en el caso de las referencias de entidad, empiezan por "&amp;" y acaban con ";" (por ejemplo, &amp;quot; para representar las comillas dobles).</p>
 <h3>Nombres en XML</h3>
 <p>Un nombre en XML empieza con una letra y continúa con letras, dígitos, rayas, dos puntos o puntos, denominados de forma global como caracteres de nombre. Los nombre que empiezan por "xml" están reservados, es decir, no se pueden crear nombres que empiecen por la cadena "xml", "XML", "Xml" o cualquier otra variante, por ejemplo, el atributo <b>xml:space</b> visto en el apartado anterior.</p>
+<h3>Comentarios</h3>
+<p>Los comentarios en el código se inician con los símbolos &lt;!-- y terminan con --&gt;<br /><br /></p>
 <p></p>
 </div>
 </div>

@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>JSON </title>
+<title>Archivos binarios y archivos planos </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -22,10 +22,10 @@
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Unidad 01: Lenguajes de Marcas</a></li>
-   <li><a href="antes_de_comenzar.html" class="daddy">Antes de comenzar...</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="antes_de_comenzar.html" class="current-page-parent daddy">Antes de comenzar...</a>
+   <ul>
       <li><a href="datos_y_formatos.html" class="no-ch">Datos y formatos</a></li>
-      <li><a href="archivos_binarios_y_archivos_planos.html" class="no-ch">Archivos binarios y archivos planos</a></li>
+      <li id="active"><a href="archivos_binarios_y_archivos_planos.html" class="active no-ch">Archivos binarios y archivos planos</a></li>
    </ul>
    </li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
@@ -35,16 +35,16 @@
       <li><a href="ventajas_para_el_tratamiento_de_la_informacin.html" class="no-ch">Ventajas para el tratamiento de la información</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="identificacin_y_clasificacin.html" class="current-page-parent daddy">Identificación y clasificación</a>
-   <ul>
+   <li><a href="identificacin_y_clasificacin.html" class="daddy">Identificación y clasificación</a>
+   <ul class="other-section">
       <li><a href="clasificacin.html" class="no-ch">Clasificación</a></li>
       <li><a href="utilizacin_en_distintos_mbitos.html" class="no-ch">Utilización en distintos ámbitos</a></li>
-      <li class="current-page-parent"><a href="ejemplos_de_lenguajes_de_marcas.html" class="current-page-parent daddy">Ejemplos de lenguajes de marcas</a>
-      <ul>
+      <li><a href="ejemplos_de_lenguajes_de_marcas.html" class="daddy">Ejemplos de lenguajes de marcas</a>
+      <ul class="other-section">
          <li><a href="html.html" class="no-ch">HTML</a></li>
          <li><a href="xml.html" class="no-ch">XML</a></li>
          <li><a href="xhtml.html" class="no-ch">XHTML</a></li>
-         <li id="active"><a href="json.html" class="active no-ch">JSON</a></li>
+         <li><a href="json.html" class="no-ch">JSON</a></li>
       </ul>
       </li>
    </ul>
@@ -83,18 +83,37 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="xhtml.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="xml2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="datos_y_formatos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="introduccin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">JSON</h1></div>
-<div class="iDevice_wrapper FreeTextIdevice" id="id12">
+<div id="nodeDecoration"><h1 id="nodeTitle">Archivos binarios y archivos planos</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id43">
 <div class="iDevice emphasis0">
-<div id="ta12_85" class="block iDevice_content">
-<h1 id="firstHeading" class="firstHeading" lang="es">JSON</h1>
-<p><b class="mw-redirectedfrom">JSON</b>, acrónimo de <i>JavaScript Object Notation</i>, es un formato de texto ligero para el intercambio de datos. JSON es un subconjunto de la notación literal de objetos de JavaScript aunque hoy, debido a su amplia adopción como alternativa a XML, se considera un formato de lenguaje independiente.</p>
-<p>Una de las supuestas ventajas de JSON sobre XML como formato de intercambio de datos es que es mucho más sencillo escribir un analizador sintáctico (parser) de JSON. En JavaScript, un texto JSON se puede analizar fácilmente lo que ha facilitado que JSON haya sido aceptado por parte de la comunidad de desarrolladores AJAX, debido a la ubicuidad de JavaScript en casi cualquier navegador web.</p>
+<div id="ta43_85" class="block iDevice_content">
+<h2>Ventajas de los archivos binarios</h2>
+<ul>
+<li>Ocupan menos espacio que los archivos de texto, ya que optimizan mejor su</li>
+<li>codificación a binario (por ejemplo el número 213 ocupa un solo byte y no tres</li>
+<li>como ocurriría si fuera un texto).</li>
+<li>Son más rápidos de manipular por parte del ordenador (se parecen más al</li>
+<li>lenguaje nativo del ordenador)</li>
+<li>Permiten el acceso directo a los datos. Los archivos de texto siempre se manejan</li>
+<li>de forma secuencial, más lenta</li>
+<li>En cierto modo permiten cifrar el contenido que de otra forma sería totalmente</li>
+<li>visible por cualquier aplicación capaz de entender textos (como el bloc de</li>
+<li>notas). Es decir los datos no son fácilmente entendibles</li>
+</ul>
+<h2>Ventajas de los archivos de texto</h2>
+<ul>
+<li>Son ideales para almacenar datos para exportar e importar información a</li>
+<li>cualquier dispositivo electrónico ya que cualquier es capaz de interpretar texto</li>
+<li>Son directamente modificables, sin tener que acudir a software específico</li>
+<li>Su manipulación es más sencilla que la de los archivos binarios</li>
+<li>Son directamente transportables y entendibles por todo tipo de redes</li>
+</ul>
+<p></p>
 </div>
 </div>
 </div>
@@ -105,7 +124,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="xhtml.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="xml2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="datos_y_formatos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="introduccin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 </div>

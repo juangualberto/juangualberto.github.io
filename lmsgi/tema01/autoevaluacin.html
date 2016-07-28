@@ -22,7 +22,12 @@
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Unidad 01: Lenguajes de Marcas</a></li>
-   <li><a href="antes_de_comenzar.html" class="no-ch">Antes de comenzar...</a></li>
+   <li><a href="antes_de_comenzar.html" class="daddy">Antes de comenzar...</a>
+   <ul class="other-section">
+      <li><a href="datos_y_formatos.html" class="no-ch">Datos y formatos</a></li>
+      <li><a href="archivos_binarios_y_archivos_planos.html" class="no-ch">Archivos binarios y archivos planos</a></li>
+   </ul>
+   </li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
    <ul class="other-section">
       <li><a href="concepto.html" class="no-ch">Concepto</a></li>
@@ -87,11 +92,17 @@
 <div class="iDevice_wrapper QuizTestIdevice em_iDevice" id="id28">
 <script type="text/javascript">
 <!-- //<![CDATA[
-var numQuestions = 1;
+var numQuestions = 4;
 var rawScore = 0;
 var actualScore = 0;
 var question0;
+var question1;
+var question2;
+var question3;
 var key0 = 0;
+var key1 = 0;
+var key2 = 2;
+var key3 = 0;
 function getAnswer()
         {
             for (var i=0; i < 3; i++)
@@ -102,10 +113,49 @@ function getAnswer()
                   break;
                }
             }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm28").key1b28[i].checked)
+               {
+                  question1 = document.getElementById("quizForm28").key1b28[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm28").key2b28[i].checked)
+               {
+                  question2 = document.getElementById("quizForm28").key2b28[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm28").key3b28[i].checked)
+               {
+                  question3 = document.getElementById("quizForm28").key3b28[i].value;
+                  break;
+               }
+            }
             }
         function calcRawScore(){
 
             if (question0 == key0)
+            {
+               rawScore++;
+            }
+            if (question1 == key1)
+            {
+               rawScore++;
+            }
+            if (question2 == key2)
+            {
+               rawScore++;
+            }
+            if (question3 == key3)
             {
                rawScore++;
             }
@@ -164,6 +214,123 @@ function getAnswer()
 <div class="iDevice_answer-content" id="answer-key0b283"><a name="answer-key0b283"></a>
 <div id="taoptionAnswer2q0b28" class="block iDevice_content">
 <p>Proceso de guardado en disco y eliminación del objeto de la memoria, para que quede espacio para otros datos o más programas.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="question">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion1b28" class="block iDevice_content">
+<p>¿Para qué crees que sirven los esquemas (schemas) de XML y JSON?</p>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b281" class="sr-av"><a href="#answer-key1b281">Opción 1</a></label><input type="radio" name="key1b28" id="key1b281" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b281"><a name="answer-key1b281"></a>
+<div id="taoptionAnswer0q1b28" class="block iDevice_content">
+<p>Son "contratos" sobre el tipo y formato que debe tener la información en los documentos.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b282" class="sr-av"><a href="#answer-key1b282">Opción 2</a></label><input type="radio" name="key1b28" id="key1b282" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b282"><a name="answer-key1b282"></a>
+<div id="taoptionAnswer1q1b28" class="block iDevice_content">
+<p>Son resúmenes para entender mejor lo que quiere decir el documento.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b283" class="sr-av"><a href="#answer-key1b283">Opción 3</a></label><input type="radio" name="key1b28" id="key1b283" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b283"><a name="answer-key1b283"></a>
+<div id="taoptionAnswer2q1b28" class="block iDevice_content">
+<p>Son "mapas" de los documentos para, por ejemplo, poder navegar sencillamente por ellos.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="question">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion2b28" class="block iDevice_content">
+<p>¿Quién inventó el HTML (Lenguaje de Marcas de HiperTexto) usado en el World Wide Web (WWW)?</p>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b281" class="sr-av"><a href="#answer-key2b281">Opción 1</a></label><input type="radio" name="key2b28" id="key2b281" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b281"><a name="answer-key2b281"></a>
+<div id="taoptionAnswer0q2b28" class="block iDevice_content">
+<p>Richard Stallman</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b282" class="sr-av"><a href="#answer-key2b282">Opción 2</a></label><input type="radio" name="key2b28" id="key2b282" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b282"><a name="answer-key2b282"></a>
+<div id="taoptionAnswer1q2b28" class="block iDevice_content">
+<p>Linus Torwalds</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b283" class="sr-av"><a href="#answer-key2b283">Opción 3</a></label><input type="radio" name="key2b28" id="key2b283" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b283"><a name="answer-key2b283"></a>
+<div id="taoptionAnswer2q2b28" class="block iDevice_content">
+<p>Tim Berners Lee</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="question">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion3b28" class="block iDevice_content">
+<p>¿Qué es un lenguaje de marcado o marcas?</p>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b281" class="sr-av"><a href="#answer-key3b281">Opción 1</a></label><input type="radio" name="key3b28" id="key3b281" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b281"><a name="answer-key3b281"></a>
+<div id="taoptionAnswer0q3b28" class="block iDevice_content">
+<p>Un método de añadir etiquetas o marcas a la información para saber características de ella, es decir cómo se compone, de qué tipo es, qué datos incluye...</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b282" class="sr-av"><a href="#answer-key3b282">Opción 2</a></label><input type="radio" name="key3b28" id="key3b282" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b282"><a name="answer-key3b282"></a>
+<div id="taoptionAnswer1q3b28" class="block iDevice_content">
+<p>Es poner marcas a un texto.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b283" class="sr-av"><a href="#answer-key3b283">Opción 3</a></label><input type="radio" name="key3b28" id="key3b283" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b283"><a name="answer-key3b283"></a>
+<div id="taoptionAnswer2q3b28" class="block iDevice_content">
+<p>Es un lenguaje de programación que se usa para representar información.</p>
 </div>
 </div>
 </div>

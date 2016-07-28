@@ -22,7 +22,12 @@
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Unidad 01: Lenguajes de Marcas</a></li>
-   <li><a href="antes_de_comenzar.html" class="no-ch">Antes de comenzar...</a></li>
+   <li><a href="antes_de_comenzar.html" class="daddy">Antes de comenzar...</a>
+   <ul class="other-section">
+      <li><a href="datos_y_formatos.html" class="no-ch">Datos y formatos</a></li>
+      <li><a href="archivos_binarios_y_archivos_planos.html" class="no-ch">Archivos binarios y archivos planos</a></li>
+   </ul>
+   </li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
    <ul class="other-section">
       <li><a href="concepto.html" class="no-ch">Concepto</a></li>
@@ -84,6 +89,78 @@
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
 <div id="nodeDecoration"><h1 id="nodeTitle">JSON Schema</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id40">
+<div class="iDevice emphasis0">
+<div id="ta40_85" class="block iDevice_content">
+<p>JSON-Schema (<a href="http://json-schema.org">http://json-schema.org</a> ) es un formato JSON para describir datos en JSON. Es en JSON lo que XSD a XML. Ofrece un contrato para definir los datos requeridos para una aplicación dada y la forma de interactuar con él.</p>
+<h3><a>Ejemplo</a></h3>
+<p>Para hacernos una idea veamos un ejemplo de un esquema JSON sencillo:</p>
+<p><strong>{</strong></p>
+<p><strong>“$schema”:</strong> <strong>“</strong><a href="http://json-schema.org/draft-04/schema#">http://json-schema.org/draft-04/schema#</a><strong>“,</strong></p>
+<p><strong>“title”:</strong> <strong>“</strong>Product<strong>“,</strong></p>
+<p><strong>“description”:</strong> <strong>“</strong>A product from Acme’s catalog<strong>“,</strong></p>
+<p><strong>“type”:</strong> <strong>“</strong>object<strong>“,</strong></p>
+<p><strong>“properties”:</strong> <strong>{</strong></p>
+<p><em>“id”</em><strong>:</strong> <strong>{</strong></p>
+<p><strong>“description”:</strong> <strong>“</strong>The unique identifier for a product<strong>“,</strong></p>
+<p><strong>“type”:</strong> <strong>“</strong>integer<strong>“</strong></p>
+<p><strong>},</strong></p>
+<p><em>“name”</em><strong>:</strong> <strong>{</strong></p>
+<p><strong>“description”:</strong> <strong>“</strong>Name of the product<strong>“,</strong></p>
+<p><strong>“type”:</strong> <strong>“</strong>string<strong>“</strong></p>
+<p><strong>},</strong></p>
+<p><em>“price”</em><strong>:</strong> <strong>{</strong></p>
+<p><strong>“type”:</strong> <strong>“</strong>number<strong>“,</strong></p>
+<p><strong>“minimum”:</strong> <strong>0,</strong></p>
+<p><strong>“exclusiveMinimum”:</strong> <strong>true</strong></p>
+<p><strong>}</strong></p>
+<p><strong>},</strong></p>
+<p><strong>“required”:</strong> <strong>[“<span style="font-size: 10pt; font-family: Consolas; color: #880000;" lang="EN-US">id</span><b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US">“,</span></b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US"><br /> <b>“</b></span><span style="font-size: 10pt; font-family: Consolas; color: #880000;" lang="EN-US">name</span><b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US">“,</span></b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US"><br /> <b>“</b></span><span style="font-size: 10pt; font-family: Consolas; color: #880000;" lang="EN-US">price</span><b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US">“]</span></b></strong></p>
+<p><strong>}</strong></p>
+<p>Que validaría como válidos JSONs como este:</p>
+<p><strong>{</strong></p>
+<p>“id”<strong>:</strong> <strong>1,</strong></p>
+<p>“name”<strong>:</strong> <strong>“</strong>A green door<strong>“,</strong></p>
+<p>“price”<strong>:</strong> <strong>12.50,</strong></p>
+<p>“tags”<strong>:</strong> <strong>[“<span style="font-size: 10pt; font-family: Consolas; color: #880000;">home</span><b><span style="font-size: 10pt; font-family: Consolas; color: #333333;">“,</span></b><span style="font-size: 10pt; font-family: Consolas; color: #333333;"><br /> <b>“</b></span><span style="font-size: 10pt; font-family: Consolas; color: #880000;">green</span><b><span style="font-size: 10pt; font-family: Consolas; color: #333333;">“]</span></b></strong></p>
+<p><strong>}</strong></p>
+<p>Y como inválido este por no tener el atributo price:</p>
+<p><strong>{</strong></p>
+<p>“id”<strong>:</strong> <strong>1,</strong></p>
+<p>“name”<strong>:</strong> <strong>“</strong>A green door<strong>“,</strong></p>
+<p>“tags”<strong>:</strong> <strong>[“home<b>“,</b> <b>“</b>green<b>“]</b></strong></p>
+<p>}</p>
+<p> </p>
+<h3><a>Atributos de un esquema JSON</a></h3>
+<p>Podemos ver la referencia completa de la especificación JSON aquí: <a href="http://json-schema.org/latest/json-schema-core.html">http://json-schema.org/latest/json-schema-core.html</a></p>
+<p><strong>{</strong></p>
+<p><strong>“$schema”:</strong> <strong>“</strong><a href="http://json-schema.org/draft-04/schema#">http://json-schema.org/draft-04/schema#</a><strong>“,</strong></p>
+<p><strong>“title”:</strong> <strong>“</strong>Product<strong>“,</strong></p>
+<p><strong>“description”:</strong> <strong>“</strong>A product from Acme’s catalog<strong>“,</strong></p>
+<p><strong>“type”:</strong> <strong>“</strong>object<strong>“,</strong></p>
+<p><strong>“properties”:</strong> <strong>{</strong></p>
+<p><em>…</em></p>
+<p><em> …</em></p>
+<p><em> …</em></p>
+<p><em> …</em></p>
+<p><strong>},</strong></p>
+<p><strong>“required”:</strong> <strong>[“<span style="font-size: 10pt; font-family: Consolas; color: #880000;" lang="EN-US">id</span><b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US">“,</span></b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US"><br /> <b>“</b></span><span style="font-size: 10pt; font-family: Consolas; color: #880000;" lang="EN-US">name</span><b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US">“,</span></b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US"><br /> <b>“</b></span><span style="font-size: 10pt; font-family: Consolas; color: #880000;" lang="EN-US">price</span><b><span style="font-size: 10pt; font-family: Consolas; color: #333333;" lang="EN-US">“]</span></b></strong></p>
+<p><strong>}</strong></p>
+<p>Los atributos más utilizados en un esquema JON son:</p>
+<ul>
+<li><strong><em>“$schema”</em></strong>: Nos permite indicar la versión del Schema JSON que queremos usar: 0.4 o 0.3, SOFIA2 se apoya en la versión 0.4 (<em>)</em>.</li>
+<li><strong>“title”</strong>: indicar un título con el que identificar el esquema.</li>
+<li><strong>“description”</strong>: Se puede utilizar este atributo para incluir una descripción de lo que va a representar el esquema JSON.</li>
+<li><strong>“type”</strong>: Para indicar el tipo que va a representar el esquema.</li>
+<li><strong>“properties”</strong>: Este atributo es un objeto con las definiciones de propiedades que definen los valores estáticos de una instancia de objeto. Es una lista no ordenada de propiedades. Los nombres de las propiedades se deben cumplir y el valor de las propiedades se definen a partir de un esquema, que debe cumplirse también.</li>
+<li><strong>“patternProperties”</strong>: Este atributo es un objeto con las definiciones de propiedades que definen los valores de una instancia de objeto. Es una lista desordenada de propiedades. Los nombres de las propiedades son patrones de expresiones regulares, las instancias de las propiedades deben cumplir con el patrón definido y el valor de la propiedad con el esquema que define esa propiedad.</li>
+<li><strong>“additionalProperties”</strong>: Permite indicar si la instancia JSON puede contener propiedades que no hayan sido definidas en el esquema. Tiene dos posibles valores (true o false), para indicar si se admite cualquier propiedad o no. Si no se añade la propiedad, se podrá incluir cualquier otra propiedad.</li>
+<li><strong>“required”</strong>: Permite indicar todas las propiedades que son obligatorias para una instancia JSON y que como mínimo debe incluir. Las propiedades se incluirán entre corchetes y separadas por el carácter “,”.</li>
+<li><strong>“$ref”</strong>: Define una URI de un esquema que contienen la completa representación para esa propiedad.</li>
+</ul>
+</div>
+</div>
+</div>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
 </div>
