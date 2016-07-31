@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>El modelo de cajas </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">HTML5</a></li>
+   <li><a href="cmo_funciona_la_web.html" class="daddy">Cómo funciona la Web</a>
+   <ul class="other-section">
+      <li><a href="direcciones_nicas.html" class="no-ch">Direcciones únicas</a></li>
+      <li><a href="publicacin_de_contenido_en_la_web.html" class="no-ch">Publicación de contenido en la Web</a></li>
+   </ul>
+   </li>
+   <li><a href="introduccin_a_html.html" class="daddy">Introducción a HTML</a>
+   <ul class="other-section">
+      <li><a href="hola_mundo.html" class="no-ch">¡¡Hola Mundo!!</a></li>
+      <li><a href="etiquetas_bsicas_de_texto.html" class="no-ch">Etiquetas básicas de texto</a></li>
+      <li><a href="etiquetas_semnticas_o_de_estructura.html" class="no-ch">Etiquetas semánticas o de estructura</a></li>
+      <li><a href="cabecera_de_una_pgina_web.html" class="no-ch">Cabecera de una página Web</a></li>
+   </ul>
+   </li>
+   <li><a href="dando_formato_al_texto.html" class="daddy">Dando formato al texto</a>
+   <ul class="other-section">
+      <li><a href="etiquetas_de_formato_de_texto.html" class="no-ch">Etiquetas de formato de texto</a></li>
+      <li><a href="estilos.html" class="no-ch">Estilos</a></li>
+      <li><a href="elementos_de_bloque_o_en_lnea.html" class="no-ch">Elementos de bloque o en línea</a></li>
+   </ul>
+   </li>
+   <li><a href="enlaces_la_clave_del_hipertexto.html" class="daddy">Enlaces: la clave del hipertexto</a>
+   <ul class="other-section">
+      <li><a href="enlaces_externos.html" class="no-ch">Enlaces externos</a></li>
+      <li><a href="anclas_y_enlaces_internos.html" class="no-ch">Anclas y enlaces internos</a></li>
+      <li><a href="correo_electrnico.html" class="no-ch">Correo electrónico</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="el_modelo_de_cajas.html" class="active daddy">El modelo de cajas</a>
+   <ul>
+      <li><a href="capas_etiqueta_div.html" class="no-ch">Capas: etiqueta div</a></li>
+      <li><a href="ejemplo_de_uso_de_cajas.html" class="no-ch">Ejemplo de uso de cajas</a></li>
+      <li><a href="para_ampliar.html" class="no-ch">Para ampliar</a></li>
+   </ul>
+   </li>
+   <li><a href="aplicando_estilos.html" class="daddy">Aplicando estilos</a>
+   <ul class="other-section">
+      <li><a href="dando_formato_al_texto2.html" class="no-ch">Dando formato al texto</a></li>
+      <li><a href="colores.html" class="no-ch">Colores</a></li>
+      <li><a href="imgenes_de_fondo.html" class="no-ch">Imágenes de fondo</a></li>
+      <li><a href="trasparenciasopacidad.html" class="no-ch">Trasparencias/opacidad</a></li>
+      <li><a href="clases_e_identificadores.html" class="no-ch">Clases e identificadores</a></li>
+      <li><a href="cmo_cargar_hojas_de_estilo.html" class="no-ch">Cómo cargar hojas de estilo</a></li>
+      <li><a href="hojas_de_estilo.html" class="daddy">Hojas de estilo</a>
+      <ul class="other-section">
+         <li><a href="css_lint.html" class="no-ch">CSS Lint</a></li>
+         <li><a href="hojas_de_estilo_alternativas.html" class="no-ch">Hojas de estilo alternativas</a></li>
+         <li><a href="css2.html" class="no-ch">CSS2</a></li>
+         <li><a href="css3.html" class="no-ch">CSS3</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="bibliografa.html" class="no-ch">Bibliografía</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="correo_electrnico.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="capas_etiqueta_div.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">El modelo de cajas</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id23">
+<div class="iDevice emphasis0">
+<div id="ta23_85" class="block iDevice_content">
+<p>Cada elemento HTML que podemos encontrar en una página web se encuentra rodeado de una caja con varias propiedades que pueden ser modificadas.</p>
+<p>La figura muestra esas propiedades.</p>
+<p><img src="cajas.jpg" height="300" width="300" /></p>
+<p>Además del contenido, cada elemento puede tener o no un borde y, además, podemos modificar la distancia entre el borde y el límite de la caja (<b>margin</b>) y la distancia entre ese borde y el comienzo del contenido (<b>padding</b>).</p>
+<p>Estas opciones nos proporcionan un gran control sobre cómo debe situarse cada elemento.</p>
+<h2>Altura y anchura de una caja</h2>
+<p>Cada elemento HTML de una página web cuenta con una anchura y una altura específica. En muchos casos esas dimensiones se las proporciona el propio contenido, como en un párrafo o una imagen, por ejemplo. Esos valores de anchura<b> </b>(<b>width</b>) y de altura (<b>height</b>) pueden ser modificados mediante las hojas de estilo, gracias a las propiedades del mismo nombre.</p>
+<p>Así podemos hacer párrafos más estrechos, imágenes que se sobredimensionen o simplemente ajustar diferentes bloques, para que se acomoden correctamente en la pantalla.</p>
+<p>Los valores <b>width </b>y <b>height </b>se acompañan de un valor numérico exacto o de un porcentaje, como en otras muchas propiedades.</p>
+<p>body {</p>
+<p>principal { width: 400px;<br /> background-color: rgb(0, 126, 0);<br /> }</p>
+<h2>Margen</h2>
+<p>Comenzaremos con la imagen. Con tan sólo modificar su margen, observaremos cómo se distancia del resto de los elementos. Usaremos la propiedad <b>margin </b>seguida de un valor numérico o de un porcentaje:</p>
+<blockquote>
+<p>img { margin: 20px; }</p>
+</blockquote>
+<h2>Relleno</h2>
+<p>Probaremos ahora a modificar su relleno, es decir, la distancia imaginaria entre un hipotético borde y la imagen propiamente dicha. Para ello emplearemos la propiedad <b>padding</b>, exactamente igual que hicimos con la anterior. Probemos con un valor menos exagerado:</p>
+<blockquote>
+<p>img { padding: 5px; }</p>
+</blockquote>
+<h2>Borde</h2>
+<p>Si recargamos la página con esta incorporación, observaremos que, en efecto, la imagen se separa un poco más, esos 5 píxeles por cada lado, pero no es posible distinguir dónde acaba el efecto del margen y comienza el del relleno. Para poder diferenciar los valores, deberíamos tener un borde en la imagen.</p>
+<blockquote>
+<p>img {</p>
+<blockquote>border-width: 2px;<br /> border-style: solid;<br /> border-color: #007000;<br /> }</blockquote>
+</blockquote>
+<p>Con los conocimientos que tenemos ya de CSS podemos intuir con facilidad qué es lo que hace cada una de esas tres propiedades: en una definimos el <b>grosor del borde</b>, en otra el <b>tipo de línea</b> y en la última su<b> color</b>.</p>
+<h2>Laterales</h2>
+<p>Tanto <b>margin</b>, como <b>padding </b>y <b>border </b>se pueden emplear para modificar laterales de una caja, con independencia de los demás. Añadiendo a cada uno de ellos la variación <b>-left</b> (izquierda), <b>-right</b> (derecha), <b>-top</b> (arriba) o <b>-bottom</b> (abajo) conseguimos que sólo afecte al valor o valores indicados.</p>
+<p>En la figura hemos aplicado estas propiedades para el título de la página:</p>
+<blockquote>
+<p>h1 {</p>
+<blockquote>margin-top:40px;<br /> padding-left: 5px;<br /> padding-right:5px;<br /> border-top-width: 2px;<br /> border-top-style: dotted;<br /> border-top-color: #007000;<br /> border-bottom-width: 2px;<br /> border-bottom-style: double;<br /> border-bottom-color: #007000;<br /> }</blockquote>
+</blockquote>
+<div class="FreeTextIdevice" id="id136">
+<div class="iDevice emphasis0">
+<div id="ta136_1" class="block" style="display: block; position: relative;">
+<h2>Más opciones para los bordes</h2>
+<p>Para los bordes podemos definir tres propiedades: su anchura, su estilo y su color. La anchura y el color se definen con las medidas habituales y los sistemas que ya hemos analizado. El <b>estilo</b>, por su parte, se basa en una serie de valores concretos:</p>
+<ul>
+<li><b>dotted</b>: punteado.</li>
+<li><b>dashed</b>: línea discontinua.</li>
+<li><b>solid</b>: línea continua.</li>
+<li><b>double</b>: línea doble.</li>
+<li><b>groove</b>: tipo de relieve.</li>
+<li><b>ridge</b>: tipo de relieve.</li>
+<li><b>inset</b>: tipo de relieve.</li>
+<li><b>outset</b>: tipo de relieve.</li>
+<li><b>none</b>: empleado para indicar que no habrá borde</li>
+</ul>
+<p>Es cuestión de probar algunos modelos. El valor <b>solid</b> es la línea sencilla, la más empleada.</p>
+<p>Como ya sucedía con otras propiedades, podemos reagrupar los valores referidos a los bordes en una sola propiedad genérica denominada <b>border</b>. Para ello estableceremos los valores separados por espacios y en el orden de <b>tamaño, estilo y color</b>, como en este ejemplo que haría la misma función que el recuadro anterior:</p>
+<blockquote>
+<p>img { border: 2px solid #007000;}</p>
+</blockquote>
+</div>
+</div>
+</div>
+<h2>Esquinas redondeadas</h2>
+<p>Con los estilos actuales podemos trazar un borde alrededor de una figura y que tenga sus esquinas redondeadas.</p>
+<p>La propiedad que lo permite es <b>border-radius</b>, acompañada de un valor numérico. El ejemplo anterior, con la incorporación de esta propiedad, daría como resultado el rectángulo de la figura:</p>
+<blockquote>
+<p>img {</p>
+<blockquote>border: 2px solid #007000;<br /> border-radius:25px;<br /> }</blockquote>
+</blockquote>
+<h2>Sombras</h2>
+<p>Las modernas hojas de estilo proporcionan a cualquier elemento la capacidad de proyectar una sombra. Ya vimos que esto funcionaba con el texto, pero además contamos con la propiedad <b>box-shadow </b>para crear sombras en cualquier caja de nuestra página web, lo que hace que sea posible aplicarselo a cualquier elemento.</p>
+<blockquote>
+<p>table {box-shadow: 8px 8px 6px #aaaaaa; }</p>
+</blockquote>
+<p>Los valores que conforman la sombra son similares a los que vimos para las sombras de texto, es decir, <b>desplazamiento horizontal</b>, <b>vertical</b>, <b>difuminado</b> y<b> color de sombra. </b></p>
+<h2>Elementos flotantes</h2>
+<p>Los elementos de una página web pueden reubicarse a la izquierda o a la derecha con tan sólo emplear la propiedad <b>float</b>, haciendo que el resto del contenido se sitúe alrededor de ese elemento.</p>
+<p>En el siguiente ejemplo la regla:</p>
+<blockquote>
+<p>img { float:left;}</p>
+</blockquote>
+<p>provoca que el texto se sitúe alrededor de la imagen.</p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="correo_electrnico.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="capas_etiqueta_div.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="my_js.js"></script></body></html>
