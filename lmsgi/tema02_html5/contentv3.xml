@@ -35,9 +35,9 @@
   <string role="key" value="_name"></string>
   <unicode value="tema02_html5"></unicode>
   <string role="key" value="_nextIdeviceId"></string>
-  <int value="40"></int>
+  <int value="41"></int>
   <string role="key" value="_nextNodeId"></string>
-  <int value="36"></int>
+  <int value="37"></int>
   <string role="key" value="_nodeIdDict"></string>
   <dictionary>
    <unicode role="key" value="0"></unicode>
@@ -1454,7 +1454,7 @@ text through the text editing buttons associated with the field."></unicode>
                      <instance class="exe.engine.field.TextField">
                       <dictionary>
                        <string role="key" value="_id"></string>
-                       <int value="161"></int>
+                       <int value="164"></int>
                        <string role="key" value="_idevice"></string>
                        <none></none>
                        <string role="key" value="_instruc"></string>
@@ -1468,7 +1468,7 @@ text through the text editing buttons associated with the field."></unicode>
                       </dictionary>
                      </instance>
                      <string role="key" value="_id"></string>
-                     <unicode value="9_85.3"></unicode>
+                     <unicode value="9_85.4"></unicode>
                      <string role="key" value="_imageResource"></string>
                      <instance class="exe.engine.resource.Resource" reference="34">
                       <dictionary>
@@ -1479,7 +1479,7 @@ text through the text editing buttons associated with the field."></unicode>
                        <string role="key" value="_storageName"></string>
                        <string value="general_layout.gif"></string>
                        <string role="key" value="_userName"></string>
-                       <string value="/tmp/tmpo6Bbh4/general_layout.gif"></string>
+                       <string value="/tmp/tmp2hWI8U/general_layout.gif"></string>
                        <string role="key" value="checksum"></string>
                        <string value="3cb7f34bc1ca28e5c933c814d1f320f8"></string>
                        <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1506,7 +1506,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="intlinks_to_anchors"></string>
                 <dictionary></dictionary>
                 <string role="key" value="nextImageId"></string>
-                <int value="4"></int>
+                <int value="5"></int>
                 <string role="key" value="parentNode"></string>
                 <reference key="33"></reference>
                </dictionary>
@@ -2609,7 +2609,7 @@ text through the text editing buttons associated with the field."></unicode>
                      <instance class="exe.engine.field.TextField">
                       <dictionary>
                        <string role="key" value="_id"></string>
-                       <int value="162"></int>
+                       <int value="165"></int>
                        <string role="key" value="_idevice"></string>
                        <none></none>
                        <string role="key" value="_instruc"></string>
@@ -2623,7 +2623,7 @@ text through the text editing buttons associated with the field."></unicode>
                       </dictionary>
                      </instance>
                      <string role="key" value="_id"></string>
-                     <unicode value="18_85.2"></unicode>
+                     <unicode value="18_85.3"></unicode>
                      <string role="key" value="_imageResource"></string>
                      <instance class="exe.engine.resource.Resource" reference="58">
                       <dictionary>
@@ -2634,7 +2634,7 @@ text through the text editing buttons associated with the field."></unicode>
                        <string role="key" value="_storageName"></string>
                        <string value="fig0404.jpg"></string>
                        <string role="key" value="_userName"></string>
-                       <string value="/tmp/tmpo6Bbh4/fig0404.jpg"></string>
+                       <string value="/tmp/tmp2hWI8U/fig0404.jpg"></string>
                        <string role="key" value="checksum"></string>
                        <string value="eaa33b8b78b2d3255d06d04478f5aafa"></string>
                        <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2661,7 +2661,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="intlinks_to_anchors"></string>
                 <dictionary></dictionary>
                 <string role="key" value="nextImageId"></string>
-                <int value="3"></int>
+                <int value="4"></int>
                 <string role="key" value="parentNode"></string>
                 <reference key="57"></reference>
                </dictionary>
@@ -3143,7 +3143,7 @@ text through the text editing buttons associated with the field."></unicode>
                   <instance class="exe.engine.field.TextField">
                    <dictionary>
                     <string role="key" value="_id"></string>
-                    <int value="163"></int>
+                    <int value="166"></int>
                     <string role="key" value="_idevice"></string>
                     <none></none>
                     <string role="key" value="_instruc"></string>
@@ -3157,7 +3157,7 @@ text through the text editing buttons associated with the field."></unicode>
                    </dictionary>
                   </instance>
                   <string role="key" value="_id"></string>
-                  <unicode value="23_85.1"></unicode>
+                  <unicode value="23_85.2"></unicode>
                   <string role="key" value="_imageResource"></string>
                   <instance class="exe.engine.resource.Resource" reference="68">
                    <dictionary>
@@ -3168,7 +3168,7 @@ text through the text editing buttons associated with the field."></unicode>
                     <string role="key" value="_storageName"></string>
                     <string value="cajas.jpg"></string>
                     <string role="key" value="_userName"></string>
-                    <string value="/tmp/tmpo6Bbh4/cajas.jpg"></string>
+                    <string value="/tmp/tmp2hWI8U/cajas.jpg"></string>
                     <string role="key" value="checksum"></string>
                     <string value="df711a42a45f3ec5dc4e862af628ec04"></string>
                     <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3195,7 +3195,7 @@ text through the text editing buttons associated with the field."></unicode>
              <string role="key" value="intlinks_to_anchors"></string>
              <dictionary></dictionary>
              <string role="key" value="nextImageId"></string>
-             <int value="2"></int>
+             <int value="3"></int>
              <string role="key" value="parentNode"></string>
              <reference key="67"></reference>
             </dictionary>
@@ -3887,7 +3887,7 @@ complete this learning."></unicode>
               <string role="key" value="nextImageId"></string>
               <int value="0"></int>
               <string role="key" value="parentNode"></string>
-              <none></none>
+              <reference key="82"></reference>
              </dictionary>
             </instance>
            </list>
@@ -4130,7 +4130,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <none></none>
+                <reference key="85"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -4288,7 +4288,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <none></none>
+                <reference key="88"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -4451,7 +4451,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <none></none>
+                <reference key="91"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -4570,7 +4570,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <none></none>
+                <reference key="94"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -4787,7 +4787,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <none></none>
+                <reference key="97"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -4948,7 +4948,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <none></none>
+                <reference key="100"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -6274,19 +6274,219 @@ text through the text editing buttons associated with the field."></unicode>
               <list></list>
              </dictionary>
             </instance>
+            <instance class="exe.engine.node.Node" reference="118">
+             <dictionary>
+              <string role="key" value="_title"></string>
+              <unicode value="BootStrap"></unicode>
+              <string role="key" value="idevices"></string>
+              <list>
+               <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="116">
+                <dictionary>
+                 <string role="key" value="_title"></string>
+                 <unicode value="Free Text"></unicode>
+                 <string role="key" value="_author"></string>
+                 <unicode value="University of Auckland"></unicode>
+                 <string role="key" value="_purpose"></string>
+                 <unicode value="The majority of a learning resource will be 
+establishing context, delivering instructions and providing general information.
+This provides the framework within which the learning activities are built and 
+delivered."></unicode>
+                 <string role="key" value="_tip"></string>
+                 <string value=""></string>
+                 <string role="key" value="childs"></string>
+                 <list></list>
+                 <string role="key" value="content"></string>
+                 <instance class="exe.engine.field.TextAreaField" reference="117">
+                  <dictionary>
+                   <string role="key" value="_id"></string>
+                   <int value="85"></int>
+                   <string role="key" value="_idevice"></string>
+                   <reference key="116"></reference>
+                   <string role="key" value="_instruc"></string>
+                   <unicode value="Use this field to enter text. This 
+iDevice has no emphasis applied although limited formatting can be applied to 
+text through the text editing buttons associated with the field."></unicode>
+                   <string role="key" value="_name"></string>
+                   <unicode value="Free Text"></unicode>
+                   <string role="key" value="anchor_names"></string>
+                   <list></list>
+                   <string role="key" value="anchors_linked_from_fields"></string>
+                   <dictionary></dictionary>
+                   <string role="key" value="content_w_resourcePaths"></string>
+                   <unicode content="true" value="&lt;h1 class=&quot;title&quot;&gt;Bootstrap&lt;/h1&gt;
+&lt;p&gt;Twitter Bootstrap es un framework o conjunto de herramientas de Código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como, extensiones de JavaScript opcionales adicionales.&lt;br /&gt;&lt;br /&gt;Es el proyecto más popular en GitHub y es usado por la NASA y la MSNBC junto a demás organizaciones.&lt;/p&gt;
+&lt;p&gt;¿Por qué usar BootStrap? Nos ahorramos tiempo de diseño que podemos invertir en programación.&lt;/p&gt;
+&lt;h1 class=&quot;title&quot;&gt;Bootstrap 3, el manual oficial&lt;/h1&gt;
+&lt;ul class=&quot;book__toc book__toc--full m-b-2&quot;&gt;
+&lt;li class=&quot;chapter level-1&quot;&gt;&lt;span&gt;Capítulo 1.&lt;/span&gt;
+&lt;ul&gt;
+&lt;li class=&quot;chapter level-1&quot;&gt;1.1. &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1.html&quot;&gt;Primeros pasos&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.2.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/contenidos_de_bootstrap.html&quot;&gt;Contenidos de Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.3.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/la_primera_plantilla_bootstrap.html&quot;&gt;La primera plantilla Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.4.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/la_comunidad_bootstrap.html&quot;&gt;La comunidad Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.5.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/desactivando_el_diseno_responsive.html&quot;&gt; Desactivando el diseño responsive&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.6.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/actualizacion_de_bootstrap_2x_a_30.html&quot;&gt;Actualización de Bootstrap 2.X a 3.0&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.7.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/compatibilidad_con_los_navegadores.html&quot;&gt;Compatibilidad con los navegadores&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.8.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/accesibilidad.html&quot;&gt;Accesibilidad&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.9.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/la_licencia_de_bootstrap.html&quot;&gt;La licencia de Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;1.10.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_1/personalizando_bootstrap.html&quot;&gt;Personalizando Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;chapter level-1&quot;&gt;&lt;span&gt;Capítulo 2.&lt;/span&gt;
+&lt;ul&gt;
+&lt;li class=&quot;chapter level-1&quot;&gt;2.1 &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_2.html&quot;&gt;Diseñando con rejilla&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;2.2.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_2/tipos_de_rejillas.html&quot;&gt;Tipos de rejillas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;2.3.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_2/reseteando_columnas.html&quot;&gt;Reseteando columnas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;2.4.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_2/desplazando_columnas.html&quot;&gt;Desplazando columnas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;2.5.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_2/anidando_columnas.html&quot;&gt;Anidando columnas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;2.6.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_2/reordenando_las_columnas.html&quot;&gt;Reordenando las columnas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;2.7.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_2/variables_y_mixins_de_less.html&quot;&gt;Variables y &lt;em&gt;mixins&lt;/em&gt; de LESS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;chapter level-1&quot;&gt;&lt;span&gt;Capítulo 3. &lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3.html&quot;&gt;Tipografía&lt;/a&gt;
+&lt;ul&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.1.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/titulares.html&quot;&gt;Titulares&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.2.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/texto.html&quot;&gt;Texto&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.3.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/enfasis.html&quot;&gt;Énfasis&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.4.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/clases_css.html&quot;&gt;Clases CSS&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.5.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/abreviaturas.html&quot;&gt;Abreviaturas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.6.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/direcciones.html&quot;&gt;Direcciones&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.7.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/blockquotes.html&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.8.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/listas.html&quot;&gt;Listas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;3.9.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_3/codigo.html&quot;&gt;Código&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;chapter level-1&quot;&gt;&lt;span&gt;Capítulo 4.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_4.html&quot;&gt;Elementos CSS&lt;/a&gt;
+&lt;ul&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;4.1.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_4/tablas.html&quot;&gt; Tablas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;4.2.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_4/imagenes.html&quot;&gt; Imágenes&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;4.3.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_4/utilidades.html&quot;&gt;Utilidades&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;chapter level-1&quot;&gt;&lt;span&gt;Capítulo 5.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5.html&quot;&gt;Formularios&lt;/a&gt;
+&lt;ul&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;5.1.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5/formulario_basico.html&quot;&gt;Formulario básico&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;5.2.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5/formulario_en_linea.html&quot;&gt;Formulario en línea&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;5.3.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5/formularios_horizontales.html&quot;&gt;Formularios horizontales&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;5.4.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5/campos_de_formulario.html&quot;&gt; Campos de formulario&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;5.5.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5/estados_de_formulario.html&quot;&gt;Estados de formulario&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;5.6.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5/redimensionando_campos_de_formulario.html&quot;&gt;Redimensionando campos de formulario&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;5.7.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5/mensajes_de_ayuda.html&quot;&gt; Mensajes de ayuda&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;5.8.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_5/botones.html&quot;&gt;Botones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;chapter level-1&quot;&gt;&lt;span&gt;Capítulo 6.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6.html&quot;&gt;Componentes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.1.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/iconos_glyphicons.html&quot;&gt; Iconos (&lt;em&gt;glyphicons&lt;/em&gt;)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.2.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/menus_desplegables.html&quot;&gt;Menús desplegables&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.3.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/grupos_de_botones.html&quot;&gt;Grupos de botones&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.4.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/botones_desplegables.html&quot;&gt; Botones desplegables&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.5.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/grupos_de_campos_de_formulario.html&quot;&gt;Grupos de campos de formulario&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.6.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/elementos_de_navegacion.html&quot;&gt;Elementos de navegación&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.7.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/barras_de_navegacion.html&quot;&gt;Barras de navegación&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.8.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/migas_de_pan.html&quot;&gt;Migas de pan&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.9.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/paginadores.html&quot;&gt;Paginadores&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.10.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/etiquetas.html&quot;&gt;Etiquetas&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.11.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/badges.html&quot;&gt;Badges&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.12.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/jumbotron.html&quot;&gt;Jumbotron&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.13.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/encabezado_de_pagina.html&quot;&gt;Encabezado de página&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.14.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/imagenes_en_miniatura.html&quot;&gt;Imágenes en miniatura&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.15.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/mensajes_de_alerta.html&quot;&gt;Mensajes de alerta&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.16.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/barras_de_progreso.html&quot;&gt;Barras de progreso&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.17.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/objetos_multimedia.html&quot;&gt;Objetos multimedia&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.18.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/listas_de_elementos.html&quot;&gt;Listas de elementos&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.19.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/paneles.html&quot;&gt;Paneles&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot; level-2&quot;&gt;&lt;span&gt;6.20.&lt;/span&gt; &lt;a href=&quot;https://librosweb.es/libro/bootstrap_3/capitulo_6/pozos.html&quot;&gt;Pozos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;"></unicode>
+                   <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                   <int value="4"></int>
+                   <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+                   <int value="2"></int>
+                   <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+                   <int value="3"></int>
+                   <string role="key" value="htmlTag"></string>
+                   <string value="div"></string>
+                   <string role="key" value="images"></string>
+                   <instance class="exe.engine.galleryidevice.GalleryImages">
+                    <dictionary>
+                     <string role="key" value=".listitems"></string>
+                     <list></list>
+                     <string role="key" value="idevice"></string>
+                     <reference key="117"></reference>
+                    </dictionary>
+                   </instance>
+                   <string role="key" value="intlinks_to_anchors"></string>
+                   <dictionary></dictionary>
+                   <string role="key" value="nextImageId"></string>
+                   <int value="0"></int>
+                   <string role="key" value="parentNode"></string>
+                   <reference key="118"></reference>
+                  </dictionary>
+                 </instance>
+                 <string role="key" value="edit"></string>
+                 <bool value="0"></bool>
+                 <string role="key" value="emphasis"></string>
+                 <int value="0"></int>
+                 <string role="key" value="exe.engine.freetextidevice.FreeTextIdevice.persistenceVersion"></string>
+                 <int value="7"></int>
+                 <string role="key" value="icon"></string>
+                 <string value=""></string>
+                 <string role="key" value="id"></string>
+                 <unicode value="40"></unicode>
+                 <string role="key" value="lastIdevice"></string>
+                 <bool value="0"></bool>
+                 <string role="key" value="originalicon"></string>
+                 <string value=""></string>
+                 <string role="key" value="parent"></string>
+                 <none></none>
+                 <string role="key" value="parentNode"></string>
+                 <reference key="118"></reference>
+                 <string role="key" value="systemResources"></string>
+                 <list></list>
+                 <string role="key" value="type"></string>
+                 <none></none>
+                 <string role="key" value="undo"></string>
+                 <bool value="1"></bool>
+                 <string role="key" value="userResources"></string>
+                 <list></list>
+                 <string role="key" value="version"></string>
+                 <int value="0"></int>
+                </dictionary>
+               </instance>
+              </list>
+              <string role="key" value="_id"></string>
+              <unicode value="36"></unicode>
+              <string role="key" value="_package"></string>
+              <reference key="6"></reference>
+              <string role="key" value="anchor_fields"></string>
+              <list></list>
+              <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
+              <int value="2"></int>
+              <string role="key" value="last_full_node_path"></string>
+              <string value="exe-node:HTML5:Aplicando%20estilos:Hojas%20de%20estilo:BootStrap"></string>
+              <string role="key" value="parent"></string>
+              <reference key="103"></reference>
+              <string role="key" value="top_anchors_linked_from_fields"></string>
+              <list></list>
+              <string role="key" value="children"></string>
+              <list></list>
+             </dictionary>
+            </instance>
            </list>
           </dictionary>
          </instance>
         </list>
        </dictionary>
       </instance>
-      <instance class="exe.engine.node.Node" reference="118">
+      <instance class="exe.engine.node.Node" reference="121">
        <dictionary>
         <string role="key" value="_title"></string>
         <unicode value="Bibliografía"></unicode>
         <string role="key" value="idevices"></string>
         <list>
-         <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="116">
+         <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="119">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Free Text"></unicode>
@@ -6302,12 +6502,12 @@ delivered."></unicode>
            <string role="key" value="childs"></string>
            <list></list>
            <string role="key" value="content"></string>
-           <instance class="exe.engine.field.TextAreaField" reference="117">
+           <instance class="exe.engine.field.TextAreaField" reference="120">
             <dictionary>
              <string role="key" value="_id"></string>
              <int value="85"></int>
              <string role="key" value="_idevice"></string>
-             <reference key="116"></reference>
+             <reference key="119"></reference>
              <string role="key" value="_instruc"></string>
              <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -6339,7 +6539,7 @@ text through the text editing buttons associated with the field."></unicode>
                <string role="key" value=".listitems"></string>
                <list></list>
                <string role="key" value="idevice"></string>
-               <reference key="117"></reference>
+               <reference key="120"></reference>
               </dictionary>
              </instance>
              <string role="key" value="intlinks_to_anchors"></string>
@@ -6347,7 +6547,7 @@ text through the text editing buttons associated with the field."></unicode>
              <string role="key" value="nextImageId"></string>
              <int value="0"></int>
              <string role="key" value="parentNode"></string>
-             <none></none>
+             <reference key="121"></reference>
             </dictionary>
            </instance>
            <string role="key" value="edit"></string>
@@ -6367,7 +6567,7 @@ text through the text editing buttons associated with the field."></unicode>
            <string role="key" value="parent"></string>
            <none></none>
            <string role="key" value="parentNode"></string>
-           <reference key="118"></reference>
+           <reference key="121"></reference>
            <string role="key" value="systemResources"></string>
            <list></list>
            <string role="key" value="type"></string>
@@ -6453,9 +6653,11 @@ text through the text editing buttons associated with the field."></unicode>
    <unicode role="key" value="33"></unicode>
    <reference key="97"></reference>
    <unicode role="key" value="34"></unicode>
-   <reference key="118"></reference>
+   <reference key="121"></reference>
    <unicode role="key" value="35"></unicode>
    <reference key="100"></reference>
+   <unicode role="key" value="36"></unicode>
+   <reference key="118"></reference>
    <unicode role="key" value="4"></unicode>
    <reference key="25"></reference>
    <unicode role="key" value="5"></unicode>
@@ -6480,7 +6682,7 @@ text through the text editing buttons associated with the field."></unicode>
   <string role="key" value="compatibleWithVersion9"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="3"></reference>
+  <reference key="9"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
