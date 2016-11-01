@@ -97,6 +97,15 @@
 <li>PasswordAuthentication yes</li>
 </ul>
 <pre><code>$ sudo su<br /># mv /etc/init/ssh.conf.back /etc/init/ssh.conf<br /># mkdir /var/run/sshd<br /># chmod 0755 /var/run/sshd<br /># ufw allow 2222<br /># start ssh</code></pre>
+<h3>Generador de aplicaciones Express</h3>
+<p>Utilizamos la herramienta de generador de aplicaciones, express, para crear rápidamente un esqueleto de aplicación.</p>
+<p>Instalamos express con el siguiente comando:</p>
+<p><code> $ npm install express-generator -g </code></p>
+<h4>Creando un proyecto con express-generator</h4>
+<p>Si por ejemplo queremos generar un nuevo proyecto llamado "GestionAcademica" con el comando:</p>
+<p><code> $ express NombreAplicacion </code></p>
+<p>Esto creará una estructura de directorios como la que sigue:</p>
+<p><img src="express.png" width="193" height="262" /></p>
 <h4>Conectando a la interfaz Web RockMongo para gestionar nuestra base de datos Mongo</h4>
 <p>Hay que hacer un túnel SSH para enrutar la conexión Web y hacerla local.</p>
 <pre><code>$ ssh -N -L 8888:127.0.0.1:80  bitnami@192.168.1.49 -p 2222</code></pre>

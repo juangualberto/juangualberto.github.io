@@ -4030,6 +4030,15 @@ text through the text editing buttons associated with the field."></unicode>
 &lt;li&gt;PasswordAuthentication yes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;$ sudo su&lt;br /&gt;# mv /etc/init/ssh.conf.back /etc/init/ssh.conf&lt;br /&gt;# mkdir /var/run/sshd&lt;br /&gt;# chmod 0755 /var/run/sshd&lt;br /&gt;# ufw allow 2222&lt;br /&gt;# start ssh&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Generador de aplicaciones Express&lt;/h3&gt;
+&lt;p&gt;Utilizamos la herramienta de generador de aplicaciones, express, para crear rápidamente un esqueleto de aplicación.&lt;/p&gt;
+&lt;p&gt;Instalamos express con el siguiente comando:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; $ npm install express-generator -g &lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;Creando un proyecto con express-generator&lt;/h4&gt;
+&lt;p&gt;Si por ejemplo queremos generar un nuevo proyecto llamado &quot;GestionAcademica&quot; con el comando:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; $ express NombreAplicacion &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Esto creará una estructura de directorios como la que sigue:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;resources/express.png&quot; width=&quot;193&quot; height=&quot;262&quot; /&gt;&lt;/p&gt;
 &lt;h4&gt;Conectando a la interfaz Web RockMongo para gestionar nuestra base de datos Mongo&lt;/h4&gt;
 &lt;p&gt;Hay que hacer un túnel SSH para enrutar la conexión Web y hacerla local.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ ssh -N -L 8888:127.0.0.1:80  bitnami@192.168.1.49 -p 2222&lt;/code&gt;&lt;/pre&gt;
@@ -4086,7 +4095,58 @@ MongoClient&lt;span style=&quot;color: #806030;&quot;&gt;.&lt;/span&gt;connect&l
                    <instance class="exe.engine.galleryidevice.GalleryImages">
                     <dictionary>
                      <string role="key" value=".listitems"></string>
-                     <list></list>
+                     <list>
+                      <instance class="exe.engine.galleryidevice.GalleryImage">
+                       <dictionary>
+                        <string role="key" value="_caption"></string>
+                        <instance class="exe.engine.field.TextField">
+                         <dictionary>
+                          <string role="key" value="_id"></string>
+                          <int value="441"></int>
+                          <string role="key" value="_idevice"></string>
+                          <none></none>
+                          <string role="key" value="_instruc"></string>
+                          <string value=""></string>
+                          <string role="key" value="_name"></string>
+                          <string value=""></string>
+                          <string role="key" value="content"></string>
+                          <string value=""></string>
+                          <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                          <int value="4"></int>
+                         </dictionary>
+                        </instance>
+                        <string role="key" value="_id"></string>
+                        <unicode value="48_85.0"></unicode>
+                        <string role="key" value="_imageResource"></string>
+                        <instance class="exe.engine.resource.Resource" reference="84">
+                         <dictionary>
+                          <string role="key" value="_idevice"></string>
+                          <reference key="81"></reference>
+                          <string role="key" value="_package"></string>
+                          <reference key="4"></reference>
+                          <string role="key" value="_storageName"></string>
+                          <string value="express.png"></string>
+                          <string role="key" value="_userName"></string>
+                          <string value="/tmp/tmpnk1Y_w.eXe/previews/allyourbase/express.png"></string>
+                          <string role="key" value="checksum"></string>
+                          <string value="edadbb3f4df4fd95178bd328246d0c75"></string>
+                          <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
+                          <int value="2"></int>
+                          <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
+                          <int value="2"></int>
+                         </dictionary>
+                        </instance>
+                        <string role="key" value="_parent"></string>
+                        <reference key="82"></reference>
+                        <string role="key" value="_thumbnailResource"></string>
+                        <none></none>
+                        <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
+                        <int value="3"></int>
+                        <string role="key" value="makeThumbnail"></string>
+                        <bool value="0"></bool>
+                       </dictionary>
+                      </instance>
+                     </list>
                      <string role="key" value="idevice"></string>
                      <reference key="82"></reference>
                     </dictionary>
@@ -4094,9 +4154,9 @@ MongoClient&lt;span style=&quot;color: #806030;&quot;&gt;.&lt;/span&gt;connect&l
                    <string role="key" value="intlinks_to_anchors"></string>
                    <dictionary></dictionary>
                    <string role="key" value="nextImageId"></string>
-                   <int value="0"></int>
+                   <int value="1"></int>
                    <string role="key" value="parentNode"></string>
-                   <none></none>
+                   <reference key="83"></reference>
                   </dictionary>
                  </instance>
                  <string role="key" value="edit"></string>
@@ -4124,7 +4184,9 @@ MongoClient&lt;span style=&quot;color: #806030;&quot;&gt;.&lt;/span&gt;connect&l
                  <string role="key" value="undo"></string>
                  <bool value="1"></bool>
                  <string role="key" value="userResources"></string>
-                 <list></list>
+                 <list>
+                  <reference key="84"></reference>
+                 </list>
                  <string role="key" value="version"></string>
                  <int value="0"></int>
                 </dictionary>
@@ -4148,13 +4210,13 @@ MongoClient&lt;span style=&quot;color: #806030;&quot;&gt;.&lt;/span&gt;connect&l
               <list></list>
              </dictionary>
             </instance>
-            <instance class="exe.engine.node.Node" reference="86">
+            <instance class="exe.engine.node.Node" reference="87">
              <dictionary>
               <string role="key" value="_title"></string>
               <unicode value="Ejemplo CRUD"></unicode>
               <string role="key" value="idevices"></string>
               <list>
-               <instance class="exe.engine.genericidevice.GenericIdevice" reference="84">
+               <instance class="exe.engine.genericidevice.GenericIdevice" reference="85">
                 <dictionary>
                  <string role="key" value="_title"></string>
                  <unicode value="Dominio del problema"></unicode>
@@ -4179,12 +4241,12 @@ pre-knowledge can be: &lt;ul&gt;
                  <int value="11"></int>
                  <string role="key" value="fields"></string>
                  <list>
-                  <instance class="exe.engine.field.TextAreaField" reference="85">
+                  <instance class="exe.engine.field.TextAreaField" reference="86">
                    <dictionary>
                     <string role="key" value="_id"></string>
                     <unicode value="41_2"></unicode>
                     <string role="key" value="_idevice"></string>
-                    <reference key="84"></reference>
+                    <reference key="85"></reference>
                     <string role="key" value="_instruc"></string>
                     <unicode value="Describe the prerequisite knowledge learners should have to effectively
 complete this learning."></unicode>
@@ -4216,7 +4278,7 @@ complete this learning."></unicode>
                       <string role="key" value=".listitems"></string>
                       <list></list>
                       <string role="key" value="idevice"></string>
-                      <reference key="85"></reference>
+                      <reference key="86"></reference>
                      </dictionary>
                     </instance>
                     <string role="key" value="intlinks_to_anchors"></string>
@@ -4224,7 +4286,7 @@ complete this learning."></unicode>
                     <string role="key" value="nextImageId"></string>
                     <int value="0"></int>
                     <string role="key" value="parentNode"></string>
-                    <reference key="86"></reference>
+                    <reference key="87"></reference>
                    </dictionary>
                   </instance>
                  </list>
@@ -4239,7 +4301,7 @@ complete this learning."></unicode>
                  <string role="key" value="originalicon"></string>
                  <unicode value="preknowledge"></unicode>
                  <string role="key" value="parentNode"></string>
-                 <reference key="86"></reference>
+                 <reference key="87"></reference>
                  <string role="key" value="systemResources"></string>
                  <list>
                   <string value="common.js"></string>
@@ -4252,7 +4314,7 @@ complete this learning."></unicode>
                  <int value="0"></int>
                 </dictionary>
                </instance>
-               <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="87">
+               <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="88">
                 <dictionary>
                  <string role="key" value="_title"></string>
                  <unicode value="Free Text"></unicode>
@@ -4268,12 +4330,12 @@ delivered."></unicode>
                  <string role="key" value="childs"></string>
                  <list></list>
                  <string role="key" value="content"></string>
-                 <instance class="exe.engine.field.TextAreaField" reference="88">
+                 <instance class="exe.engine.field.TextAreaField" reference="89">
                   <dictionary>
                    <string role="key" value="_id"></string>
                    <int value="85"></int>
                    <string role="key" value="_idevice"></string>
-                   <reference key="87"></reference>
+                   <reference key="88"></reference>
                    <string role="key" value="_instruc"></string>
                    <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -4334,10 +4396,10 @@ text through the text editing buttons associated with the field."></unicode>
                         <string role="key" value="_id"></string>
                         <unicode value="40_85.10"></unicode>
                         <string role="key" value="_imageResource"></string>
-                        <instance class="exe.engine.resource.Resource" reference="89">
+                        <instance class="exe.engine.resource.Resource" reference="90">
                          <dictionary>
                           <string role="key" value="_idevice"></string>
-                          <reference key="87"></reference>
+                          <reference key="88"></reference>
                           <string role="key" value="_package"></string>
                           <reference key="4"></reference>
                           <string role="key" value="_storageName"></string>
@@ -4353,7 +4415,7 @@ text through the text editing buttons associated with the field."></unicode>
                          </dictionary>
                         </instance>
                         <string role="key" value="_parent"></string>
-                        <reference key="88"></reference>
+                        <reference key="89"></reference>
                         <string role="key" value="_thumbnailResource"></string>
                         <none></none>
                         <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -4384,10 +4446,10 @@ text through the text editing buttons associated with the field."></unicode>
                         <string role="key" value="_id"></string>
                         <unicode value="40_85.11"></unicode>
                         <string role="key" value="_imageResource"></string>
-                        <instance class="exe.engine.resource.Resource" reference="90">
+                        <instance class="exe.engine.resource.Resource" reference="91">
                          <dictionary>
                           <string role="key" value="_idevice"></string>
-                          <reference key="87"></reference>
+                          <reference key="88"></reference>
                           <string role="key" value="_package"></string>
                           <reference key="4"></reference>
                           <string role="key" value="_storageName"></string>
@@ -4403,7 +4465,7 @@ text through the text editing buttons associated with the field."></unicode>
                          </dictionary>
                         </instance>
                         <string role="key" value="_parent"></string>
-                        <reference key="88"></reference>
+                        <reference key="89"></reference>
                         <string role="key" value="_thumbnailResource"></string>
                         <none></none>
                         <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -4414,7 +4476,7 @@ text through the text editing buttons associated with the field."></unicode>
                       </instance>
                      </list>
                      <string role="key" value="idevice"></string>
-                     <reference key="88"></reference>
+                     <reference key="89"></reference>
                     </dictionary>
                    </instance>
                    <string role="key" value="intlinks_to_anchors"></string>
@@ -4422,7 +4484,7 @@ text through the text editing buttons associated with the field."></unicode>
                    <string role="key" value="nextImageId"></string>
                    <int value="12"></int>
                    <string role="key" value="parentNode"></string>
-                   <reference key="86"></reference>
+                   <reference key="87"></reference>
                   </dictionary>
                  </instance>
                  <string role="key" value="edit"></string>
@@ -4442,7 +4504,7 @@ text through the text editing buttons associated with the field."></unicode>
                  <string role="key" value="parent"></string>
                  <none></none>
                  <string role="key" value="parentNode"></string>
-                 <reference key="86"></reference>
+                 <reference key="87"></reference>
                  <string role="key" value="systemResources"></string>
                  <list></list>
                  <string role="key" value="type"></string>
@@ -4451,8 +4513,8 @@ text through the text editing buttons associated with the field."></unicode>
                  <bool value="1"></bool>
                  <string role="key" value="userResources"></string>
                  <list>
-                  <reference key="89"></reference>
                   <reference key="90"></reference>
+                  <reference key="91"></reference>
                  </list>
                  <string role="key" value="version"></string>
                  <int value="0"></int>
@@ -4475,13 +4537,13 @@ text through the text editing buttons associated with the field."></unicode>
               <list></list>
               <string role="key" value="children"></string>
               <list>
-               <instance class="exe.engine.node.Node" reference="93">
+               <instance class="exe.engine.node.Node" reference="94">
                 <dictionary>
                  <string role="key" value="_title"></string>
                  <unicode value="Los verbos REST/HTTP"></unicode>
                  <string role="key" value="idevices"></string>
                  <list>
-                  <instance class="exe.engine.genericidevice.GenericIdevice" reference="91">
+                  <instance class="exe.engine.genericidevice.GenericIdevice" reference="92">
                    <dictionary>
                     <string role="key" value="_title"></string>
                     <unicode value="Operaciones CRUD en un servicio REST"></unicode>
@@ -4503,12 +4565,12 @@ learning tasks."></unicode>
                     <int value="11"></int>
                     <string role="key" value="fields"></string>
                     <list>
-                     <instance class="exe.engine.field.TextAreaField" reference="92">
+                     <instance class="exe.engine.field.TextAreaField" reference="93">
                       <dictionary>
                        <string role="key" value="_id"></string>
                        <unicode value="42_2"></unicode>
                        <string role="key" value="_idevice"></string>
-                       <reference key="91"></reference>
+                       <reference key="92"></reference>
                        <string role="key" value="_instruc"></string>
                        <unicode value="Type the learning objectives for this resource."></unicode>
                        <string role="key" value="_name"></string>
@@ -4566,7 +4628,7 @@ learning tasks."></unicode>
                          <string role="key" value=".listitems"></string>
                          <list></list>
                          <string role="key" value="idevice"></string>
-                         <reference key="92"></reference>
+                         <reference key="93"></reference>
                         </dictionary>
                        </instance>
                        <string role="key" value="intlinks_to_anchors"></string>
@@ -4574,7 +4636,7 @@ learning tasks."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <reference key="93"></reference>
+                       <reference key="94"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -4589,7 +4651,7 @@ learning tasks."></unicode>
                     <string role="key" value="originalicon"></string>
                     <unicode value="objectives"></unicode>
                     <string role="key" value="parentNode"></string>
-                    <reference key="93"></reference>
+                    <reference key="94"></reference>
                     <string role="key" value="systemResources"></string>
                     <list>
                      <string value="common.js"></string>
@@ -4614,20 +4676,20 @@ learning tasks."></unicode>
                  <string role="key" value="last_full_node_path"></string>
                  <string value="exe-node:Tema%205%3A%20BBDDOO:Bases%20de%20datos%20NoSQL:Aplicaciones%20Full%20Stack%20con%20Mongo:Ejemplo%20CRUD:Los%20verbos%20REST/HTTP"></string>
                  <string role="key" value="parent"></string>
-                 <reference key="86"></reference>
+                 <reference key="87"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
                  <list></list>
                  <string role="key" value="children"></string>
                  <list></list>
                 </dictionary>
                </instance>
-               <instance class="exe.engine.node.Node" reference="96">
+               <instance class="exe.engine.node.Node" reference="97">
                 <dictionary>
                  <string role="key" value="_title"></string>
                  <unicode value="Read Alumno"></unicode>
                  <string role="key" value="idevices"></string>
                  <list>
-                  <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="94">
+                  <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="95">
                    <dictionary>
                     <string role="key" value="_title"></string>
                     <unicode value="Free Text"></unicode>
@@ -4643,12 +4705,12 @@ delivered."></unicode>
                     <string role="key" value="childs"></string>
                     <list></list>
                     <string role="key" value="content"></string>
-                    <instance class="exe.engine.field.TextAreaField" reference="95">
+                    <instance class="exe.engine.field.TextAreaField" reference="96">
                      <dictionary>
                       <string role="key" value="_id"></string>
                       <int value="85"></int>
                       <string role="key" value="_idevice"></string>
-                      <reference key="94"></reference>
+                      <reference key="95"></reference>
                       <string role="key" value="_instruc"></string>
                       <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -4703,10 +4765,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="41_85.12"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="97">
+                           <instance class="exe.engine.resource.Resource" reference="98">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="94"></reference>
+                             <reference key="95"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -4722,7 +4784,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="95"></reference>
+                           <reference key="96"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -4753,10 +4815,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="41_85.13"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="98">
+                           <instance class="exe.engine.resource.Resource" reference="99">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="94"></reference>
+                             <reference key="95"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -4772,7 +4834,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="95"></reference>
+                           <reference key="96"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -4783,7 +4845,7 @@ text through the text editing buttons associated with the field."></unicode>
                          </instance>
                         </list>
                         <string role="key" value="idevice"></string>
-                        <reference key="95"></reference>
+                        <reference key="96"></reference>
                        </dictionary>
                       </instance>
                       <string role="key" value="intlinks_to_anchors"></string>
@@ -4791,7 +4853,7 @@ text through the text editing buttons associated with the field."></unicode>
                       <string role="key" value="nextImageId"></string>
                       <int value="14"></int>
                       <string role="key" value="parentNode"></string>
-                      <reference key="96"></reference>
+                      <reference key="97"></reference>
                      </dictionary>
                     </instance>
                     <string role="key" value="edit"></string>
@@ -4811,7 +4873,7 @@ text through the text editing buttons associated with the field."></unicode>
                     <string role="key" value="parent"></string>
                     <none></none>
                     <string role="key" value="parentNode"></string>
-                    <reference key="96"></reference>
+                    <reference key="97"></reference>
                     <string role="key" value="systemResources"></string>
                     <list></list>
                     <string role="key" value="type"></string>
@@ -4820,8 +4882,8 @@ text through the text editing buttons associated with the field."></unicode>
                     <bool value="1"></bool>
                     <string role="key" value="userResources"></string>
                     <list>
-                     <reference key="97"></reference>
                      <reference key="98"></reference>
+                     <reference key="99"></reference>
                     </list>
                     <string role="key" value="version"></string>
                     <int value="0"></int>
@@ -4839,20 +4901,20 @@ text through the text editing buttons associated with the field."></unicode>
                  <string role="key" value="last_full_node_path"></string>
                  <string value="exe-node:Tema%205%3A%20BBDDOO:Bases%20de%20datos%20NoSQL:Aplicaciones%20Full%20Stack%20con%20Mongo:Ejemplo%20CRUD:Read%20Alumno"></string>
                  <string role="key" value="parent"></string>
-                 <reference key="86"></reference>
+                 <reference key="87"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
                  <list></list>
                  <string role="key" value="children"></string>
                  <list></list>
                 </dictionary>
                </instance>
-               <instance class="exe.engine.node.Node" reference="101">
+               <instance class="exe.engine.node.Node" reference="102">
                 <dictionary>
                  <string role="key" value="_title"></string>
                  <unicode value="Create Alumno"></unicode>
                  <string role="key" value="idevices"></string>
                  <list>
-                  <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="99">
+                  <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="100">
                    <dictionary>
                     <string role="key" value="_title"></string>
                     <unicode value="Free Text"></unicode>
@@ -4868,12 +4930,12 @@ delivered."></unicode>
                     <string role="key" value="childs"></string>
                     <list></list>
                     <string role="key" value="content"></string>
-                    <instance class="exe.engine.field.TextAreaField" reference="100">
+                    <instance class="exe.engine.field.TextAreaField" reference="101">
                      <dictionary>
                       <string role="key" value="_id"></string>
                       <int value="85"></int>
                       <string role="key" value="_idevice"></string>
-                      <reference key="99"></reference>
+                      <reference key="100"></reference>
                       <string role="key" value="_instruc"></string>
                       <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -4933,10 +4995,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="42_85.20"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="102">
+                           <instance class="exe.engine.resource.Resource" reference="103">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="99"></reference>
+                             <reference key="100"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -4952,7 +5014,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="100"></reference>
+                           <reference key="101"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -4983,10 +5045,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="42_85.21"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="103">
+                           <instance class="exe.engine.resource.Resource" reference="104">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="99"></reference>
+                             <reference key="100"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5002,7 +5064,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="100"></reference>
+                           <reference key="101"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5033,10 +5095,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="42_85.22"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="104">
+                           <instance class="exe.engine.resource.Resource" reference="105">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="99"></reference>
+                             <reference key="100"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5052,7 +5114,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="100"></reference>
+                           <reference key="101"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5063,7 +5125,7 @@ text through the text editing buttons associated with the field."></unicode>
                          </instance>
                         </list>
                         <string role="key" value="idevice"></string>
-                        <reference key="100"></reference>
+                        <reference key="101"></reference>
                        </dictionary>
                       </instance>
                       <string role="key" value="intlinks_to_anchors"></string>
@@ -5071,7 +5133,7 @@ text through the text editing buttons associated with the field."></unicode>
                       <string role="key" value="nextImageId"></string>
                       <int value="23"></int>
                       <string role="key" value="parentNode"></string>
-                      <reference key="101"></reference>
+                      <reference key="102"></reference>
                      </dictionary>
                     </instance>
                     <string role="key" value="edit"></string>
@@ -5091,7 +5153,7 @@ text through the text editing buttons associated with the field."></unicode>
                     <string role="key" value="parent"></string>
                     <none></none>
                     <string role="key" value="parentNode"></string>
-                    <reference key="101"></reference>
+                    <reference key="102"></reference>
                     <string role="key" value="systemResources"></string>
                     <list></list>
                     <string role="key" value="type"></string>
@@ -5100,9 +5162,9 @@ text through the text editing buttons associated with the field."></unicode>
                     <bool value="1"></bool>
                     <string role="key" value="userResources"></string>
                     <list>
-                     <reference key="102"></reference>
                      <reference key="103"></reference>
                      <reference key="104"></reference>
+                     <reference key="105"></reference>
                     </list>
                     <string role="key" value="version"></string>
                     <int value="0"></int>
@@ -5120,20 +5182,20 @@ text through the text editing buttons associated with the field."></unicode>
                  <string role="key" value="last_full_node_path"></string>
                  <string value="exe-node:Tema%205%3A%20BBDDOO:Bases%20de%20datos%20NoSQL:Aplicaciones%20Full%20Stack%20con%20Mongo:Ejemplo%20CRUD:Create%20Alumno"></string>
                  <string role="key" value="parent"></string>
-                 <reference key="86"></reference>
+                 <reference key="87"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
                  <list></list>
                  <string role="key" value="children"></string>
                  <list></list>
                 </dictionary>
                </instance>
-               <instance class="exe.engine.node.Node" reference="107">
+               <instance class="exe.engine.node.Node" reference="108">
                 <dictionary>
                  <string role="key" value="_title"></string>
                  <unicode value="Delete Alumno"></unicode>
                  <string role="key" value="idevices"></string>
                  <list>
-                  <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="105">
+                  <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="106">
                    <dictionary>
                     <string role="key" value="_title"></string>
                     <unicode value="Free Text"></unicode>
@@ -5149,12 +5211,12 @@ delivered."></unicode>
                     <string role="key" value="childs"></string>
                     <list></list>
                     <string role="key" value="content"></string>
-                    <instance class="exe.engine.field.TextAreaField" reference="106">
+                    <instance class="exe.engine.field.TextAreaField" reference="107">
                      <dictionary>
                       <string role="key" value="_id"></string>
                       <int value="85"></int>
                       <string role="key" value="_idevice"></string>
-                      <reference key="105"></reference>
+                      <reference key="106"></reference>
                       <string role="key" value="_instruc"></string>
                       <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -5211,10 +5273,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="43_85.12"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="108">
+                           <instance class="exe.engine.resource.Resource" reference="109">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="105"></reference>
+                             <reference key="106"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5230,7 +5292,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="106"></reference>
+                           <reference key="107"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5261,10 +5323,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="43_85.13"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="109">
+                           <instance class="exe.engine.resource.Resource" reference="110">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="105"></reference>
+                             <reference key="106"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5280,7 +5342,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="106"></reference>
+                           <reference key="107"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5291,7 +5353,7 @@ text through the text editing buttons associated with the field."></unicode>
                          </instance>
                         </list>
                         <string role="key" value="idevice"></string>
-                        <reference key="106"></reference>
+                        <reference key="107"></reference>
                        </dictionary>
                       </instance>
                       <string role="key" value="intlinks_to_anchors"></string>
@@ -5299,7 +5361,7 @@ text through the text editing buttons associated with the field."></unicode>
                       <string role="key" value="nextImageId"></string>
                       <int value="14"></int>
                       <string role="key" value="parentNode"></string>
-                      <reference key="107"></reference>
+                      <reference key="108"></reference>
                      </dictionary>
                     </instance>
                     <string role="key" value="edit"></string>
@@ -5319,7 +5381,7 @@ text through the text editing buttons associated with the field."></unicode>
                     <string role="key" value="parent"></string>
                     <none></none>
                     <string role="key" value="parentNode"></string>
-                    <reference key="107"></reference>
+                    <reference key="108"></reference>
                     <string role="key" value="systemResources"></string>
                     <list></list>
                     <string role="key" value="type"></string>
@@ -5328,8 +5390,8 @@ text through the text editing buttons associated with the field."></unicode>
                     <bool value="1"></bool>
                     <string role="key" value="userResources"></string>
                     <list>
-                     <reference key="108"></reference>
                      <reference key="109"></reference>
+                     <reference key="110"></reference>
                     </list>
                     <string role="key" value="version"></string>
                     <int value="0"></int>
@@ -5347,20 +5409,20 @@ text through the text editing buttons associated with the field."></unicode>
                  <string role="key" value="last_full_node_path"></string>
                  <string value="exe-node:Tema%205%3A%20BBDDOO:Bases%20de%20datos%20NoSQL:Aplicaciones%20Full%20Stack%20con%20Mongo:Ejemplo%20CRUD:Delete%20Alumno"></string>
                  <string role="key" value="parent"></string>
-                 <reference key="86"></reference>
+                 <reference key="87"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
                  <list></list>
                  <string role="key" value="children"></string>
                  <list></list>
                 </dictionary>
                </instance>
-               <instance class="exe.engine.node.Node" reference="112">
+               <instance class="exe.engine.node.Node" reference="113">
                 <dictionary>
                  <string role="key" value="_title"></string>
                  <unicode value="Update Alumno"></unicode>
                  <string role="key" value="idevices"></string>
                  <list>
-                  <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="110">
+                  <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="111">
                    <dictionary>
                     <string role="key" value="_title"></string>
                     <unicode value="Free Text"></unicode>
@@ -5376,12 +5438,12 @@ delivered."></unicode>
                     <string role="key" value="childs"></string>
                     <list></list>
                     <string role="key" value="content"></string>
-                    <instance class="exe.engine.field.TextAreaField" reference="111">
+                    <instance class="exe.engine.field.TextAreaField" reference="112">
                      <dictionary>
                       <string role="key" value="_id"></string>
                       <int value="85"></int>
                       <string role="key" value="_idevice"></string>
-                      <reference key="110"></reference>
+                      <reference key="111"></reference>
                       <string role="key" value="_instruc"></string>
                       <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -5440,10 +5502,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="44_85.25"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="113">
+                           <instance class="exe.engine.resource.Resource" reference="114">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="110"></reference>
+                             <reference key="111"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5459,7 +5521,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="111"></reference>
+                           <reference key="112"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5490,10 +5552,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="44_85.26"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="114">
+                           <instance class="exe.engine.resource.Resource" reference="115">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="110"></reference>
+                             <reference key="111"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5509,7 +5571,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="111"></reference>
+                           <reference key="112"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5540,10 +5602,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="44_85.27"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="115">
+                           <instance class="exe.engine.resource.Resource" reference="116">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="110"></reference>
+                             <reference key="111"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5559,7 +5621,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="111"></reference>
+                           <reference key="112"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5590,10 +5652,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="44_85.28"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="116">
+                           <instance class="exe.engine.resource.Resource" reference="117">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="110"></reference>
+                             <reference key="111"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5609,7 +5671,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="111"></reference>
+                           <reference key="112"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5640,10 +5702,10 @@ text through the text editing buttons associated with the field."></unicode>
                            <string role="key" value="_id"></string>
                            <unicode value="44_85.29"></unicode>
                            <string role="key" value="_imageResource"></string>
-                           <instance class="exe.engine.resource.Resource" reference="117">
+                           <instance class="exe.engine.resource.Resource" reference="118">
                             <dictionary>
                              <string role="key" value="_idevice"></string>
-                             <reference key="110"></reference>
+                             <reference key="111"></reference>
                              <string role="key" value="_package"></string>
                              <reference key="4"></reference>
                              <string role="key" value="_storageName"></string>
@@ -5659,7 +5721,7 @@ text through the text editing buttons associated with the field."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_parent"></string>
-                           <reference key="111"></reference>
+                           <reference key="112"></reference>
                            <string role="key" value="_thumbnailResource"></string>
                            <none></none>
                            <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
@@ -5670,7 +5732,7 @@ text through the text editing buttons associated with the field."></unicode>
                          </instance>
                         </list>
                         <string role="key" value="idevice"></string>
-                        <reference key="111"></reference>
+                        <reference key="112"></reference>
                        </dictionary>
                       </instance>
                       <string role="key" value="intlinks_to_anchors"></string>
@@ -5678,7 +5740,7 @@ text through the text editing buttons associated with the field."></unicode>
                       <string role="key" value="nextImageId"></string>
                       <int value="30"></int>
                       <string role="key" value="parentNode"></string>
-                      <reference key="112"></reference>
+                      <reference key="113"></reference>
                      </dictionary>
                     </instance>
                     <string role="key" value="edit"></string>
@@ -5698,7 +5760,7 @@ text through the text editing buttons associated with the field."></unicode>
                     <string role="key" value="parent"></string>
                     <none></none>
                     <string role="key" value="parentNode"></string>
-                    <reference key="112"></reference>
+                    <reference key="113"></reference>
                     <string role="key" value="systemResources"></string>
                     <list></list>
                     <string role="key" value="type"></string>
@@ -5707,11 +5769,11 @@ text through the text editing buttons associated with the field."></unicode>
                     <bool value="1"></bool>
                     <string role="key" value="userResources"></string>
                     <list>
-                     <reference key="113"></reference>
                      <reference key="114"></reference>
                      <reference key="115"></reference>
                      <reference key="116"></reference>
                      <reference key="117"></reference>
+                     <reference key="118"></reference>
                     </list>
                     <string role="key" value="version"></string>
                     <int value="0"></int>
@@ -5729,7 +5791,7 @@ text through the text editing buttons associated with the field."></unicode>
                  <string role="key" value="last_full_node_path"></string>
                  <string value="exe-node:Tema%205%3A%20BBDDOO:Bases%20de%20datos%20NoSQL:Aplicaciones%20Full%20Stack%20con%20Mongo:Ejemplo%20CRUD:Update%20Alumno"></string>
                  <string role="key" value="parent"></string>
-                 <reference key="86"></reference>
+                 <reference key="87"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
                  <list></list>
                  <string role="key" value="children"></string>
@@ -5745,13 +5807,13 @@ text through the text editing buttons associated with the field."></unicode>
         </list>
        </dictionary>
       </instance>
-      <instance class="exe.engine.node.Node" reference="120">
+      <instance class="exe.engine.node.Node" reference="121">
        <dictionary>
         <string role="key" value="_title"></string>
         <unicode value="Sistemas Gestores de Bases de Datos Objeto-Relacional (ORDBMS)"></unicode>
         <string role="key" value="idevices"></string>
         <list>
-         <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="118">
+         <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="119">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Free Text"></unicode>
@@ -5767,12 +5829,12 @@ delivered."></unicode>
            <string role="key" value="childs"></string>
            <list></list>
            <string role="key" value="content"></string>
-           <instance class="exe.engine.field.TextAreaField" reference="119">
+           <instance class="exe.engine.field.TextAreaField" reference="120">
             <dictionary>
              <string role="key" value="_id"></string>
              <int value="85"></int>
              <string role="key" value="_idevice"></string>
-             <reference key="118"></reference>
+             <reference key="119"></reference>
              <string role="key" value="_instruc"></string>
              <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -5804,7 +5866,7 @@ text through the text editing buttons associated with the field."></unicode>
                <string role="key" value=".listitems"></string>
                <list></list>
                <string role="key" value="idevice"></string>
-               <reference key="119"></reference>
+               <reference key="120"></reference>
               </dictionary>
              </instance>
              <string role="key" value="intlinks_to_anchors"></string>
@@ -5812,7 +5874,7 @@ text through the text editing buttons associated with the field."></unicode>
              <string role="key" value="nextImageId"></string>
              <int value="0"></int>
              <string role="key" value="parentNode"></string>
-             <reference key="120"></reference>
+             <reference key="121"></reference>
             </dictionary>
            </instance>
            <string role="key" value="edit"></string>
@@ -5832,7 +5894,7 @@ text through the text editing buttons associated with the field."></unicode>
            <string role="key" value="parent"></string>
            <none></none>
            <string role="key" value="parentNode"></string>
-           <reference key="120"></reference>
+           <reference key="121"></reference>
            <string role="key" value="systemResources"></string>
            <list></list>
            <string role="key" value="type"></string>
@@ -5845,7 +5907,7 @@ text through the text editing buttons associated with the field."></unicode>
            <int value="0"></int>
           </dictionary>
          </instance>
-         <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="121">
+         <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="122">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Free Text"></unicode>
@@ -5861,12 +5923,12 @@ delivered."></unicode>
            <string role="key" value="childs"></string>
            <list></list>
            <string role="key" value="content"></string>
-           <instance class="exe.engine.field.TextAreaField" reference="122">
+           <instance class="exe.engine.field.TextAreaField" reference="123">
             <dictionary>
              <string role="key" value="_id"></string>
              <int value="85"></int>
              <string role="key" value="_idevice"></string>
-             <reference key="121"></reference>
+             <reference key="122"></reference>
              <string role="key" value="_instruc"></string>
              <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -5917,7 +5979,7 @@ text through the text editing buttons associated with the field."></unicode>
                <string role="key" value=".listitems"></string>
                <list></list>
                <string role="key" value="idevice"></string>
-               <reference key="122"></reference>
+               <reference key="123"></reference>
               </dictionary>
              </instance>
              <string role="key" value="intlinks_to_anchors"></string>
@@ -5925,7 +5987,7 @@ text through the text editing buttons associated with the field."></unicode>
              <string role="key" value="nextImageId"></string>
              <int value="0"></int>
              <string role="key" value="parentNode"></string>
-             <reference key="120"></reference>
+             <reference key="121"></reference>
             </dictionary>
            </instance>
            <string role="key" value="edit"></string>
@@ -5945,7 +6007,7 @@ text through the text editing buttons associated with the field."></unicode>
            <string role="key" value="parent"></string>
            <none></none>
            <string role="key" value="parentNode"></string>
-           <reference key="120"></reference>
+           <reference key="121"></reference>
            <string role="key" value="systemResources"></string>
            <list></list>
            <string role="key" value="type"></string>
@@ -5975,13 +6037,13 @@ text through the text editing buttons associated with the field."></unicode>
         <list></list>
         <string role="key" value="children"></string>
         <list>
-         <instance class="exe.engine.node.Node" reference="125">
+         <instance class="exe.engine.node.Node" reference="126">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Oracle como ORDBMS"></unicode>
            <string role="key" value="idevices"></string>
            <list>
-            <instance class="exe.engine.genericidevice.GenericIdevice" reference="123">
+            <instance class="exe.engine.genericidevice.GenericIdevice" reference="124">
              <dictionary>
               <string role="key" value="_title"></string>
               <unicode value="Elementos de Oracle para Implantación de RDBOO"></unicode>
@@ -6003,12 +6065,12 @@ learning tasks."></unicode>
               <int value="11"></int>
               <string role="key" value="fields"></string>
               <list>
-               <instance class="exe.engine.field.TextAreaField" reference="124">
+               <instance class="exe.engine.field.TextAreaField" reference="125">
                 <dictionary>
                  <string role="key" value="_id"></string>
                  <unicode value="43_2"></unicode>
                  <string role="key" value="_idevice"></string>
-                 <reference key="123"></reference>
+                 <reference key="124"></reference>
                  <string role="key" value="_instruc"></string>
                  <unicode value="Type the learning objectives for this resource."></unicode>
                  <string role="key" value="_name"></string>
@@ -6069,7 +6131,7 @@ learning tasks."></unicode>
                    <string role="key" value=".listitems"></string>
                    <list></list>
                    <string role="key" value="idevice"></string>
-                   <reference key="124"></reference>
+                   <reference key="125"></reference>
                   </dictionary>
                  </instance>
                  <string role="key" value="intlinks_to_anchors"></string>
@@ -6077,7 +6139,7 @@ learning tasks."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <reference key="125"></reference>
+                 <reference key="126"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -6092,7 +6154,7 @@ learning tasks."></unicode>
               <string role="key" value="originalicon"></string>
               <unicode value="objectives"></unicode>
               <string role="key" value="parentNode"></string>
-              <reference key="125"></reference>
+              <reference key="126"></reference>
               <string role="key" value="systemResources"></string>
               <list>
                <string value="common.js"></string>
@@ -6117,20 +6179,20 @@ learning tasks."></unicode>
            <string role="key" value="last_full_node_path"></string>
            <string value="exe-node:Tema%205%3A%20BBDDOO:Sistemas%20Gestores%20de%20Bases%20de%20Datos%20Objeto-Relacional%20%28ORDBMS%29:Oracle%20como%20ORDBMS"></string>
            <string role="key" value="parent"></string>
-           <reference key="120"></reference>
+           <reference key="121"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
            <list></list>
            <string role="key" value="children"></string>
            <list></list>
           </dictionary>
          </instance>
-         <instance class="exe.engine.node.Node" reference="128">
+         <instance class="exe.engine.node.Node" reference="129">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Definiendo el objeto Cliente en Oracle"></unicode>
            <string role="key" value="idevices"></string>
            <list>
-            <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="126">
+            <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="127">
              <dictionary>
               <string role="key" value="_title"></string>
               <unicode value="Free Text"></unicode>
@@ -6146,12 +6208,12 @@ delivered."></unicode>
               <string role="key" value="childs"></string>
               <list></list>
               <string role="key" value="content"></string>
-              <instance class="exe.engine.field.TextAreaField" reference="127">
+              <instance class="exe.engine.field.TextAreaField" reference="128">
                <dictionary>
                 <string role="key" value="_id"></string>
                 <int value="85"></int>
                 <string role="key" value="_idevice"></string>
-                <reference key="126"></reference>
+                <reference key="127"></reference>
                 <string role="key" value="_instruc"></string>
                 <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -6237,7 +6299,7 @@ END;
                   <string role="key" value=".listitems"></string>
                   <list></list>
                   <string role="key" value="idevice"></string>
-                  <reference key="127"></reference>
+                  <reference key="128"></reference>
                  </dictionary>
                 </instance>
                 <string role="key" value="intlinks_to_anchors"></string>
@@ -6245,7 +6307,7 @@ END;
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <reference key="128"></reference>
+                <reference key="129"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -6265,7 +6327,7 @@ END;
               <string role="key" value="parent"></string>
               <none></none>
               <string role="key" value="parentNode"></string>
-              <reference key="128"></reference>
+              <reference key="129"></reference>
               <string role="key" value="systemResources"></string>
               <list></list>
               <string role="key" value="type"></string>
@@ -6290,20 +6352,20 @@ END;
            <string role="key" value="last_full_node_path"></string>
            <string value="exe-node:Tema%205%3A%20BBDDOO:Sistemas%20Gestores%20de%20Bases%20de%20Datos%20Objeto-Relacional%20%28ORDBMS%29:Definiendo%20el%20objeto%20Cliente%20en%20Oracle"></string>
            <string role="key" value="parent"></string>
-           <reference key="120"></reference>
+           <reference key="121"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
            <list></list>
            <string role="key" value="children"></string>
            <list></list>
           </dictionary>
          </instance>
-         <instance class="exe.engine.node.Node" reference="131">
+         <instance class="exe.engine.node.Node" reference="132">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Defniendo la tabla objeto relacional cliente"></unicode>
            <string role="key" value="idevices"></string>
            <list>
-            <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="129">
+            <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="130">
              <dictionary>
               <string role="key" value="_title"></string>
               <unicode value="Free Text"></unicode>
@@ -6319,12 +6381,12 @@ delivered."></unicode>
               <string role="key" value="childs"></string>
               <list></list>
               <string role="key" value="content"></string>
-              <instance class="exe.engine.field.TextAreaField" reference="130">
+              <instance class="exe.engine.field.TextAreaField" reference="131">
                <dictionary>
                 <string role="key" value="_id"></string>
                 <int value="85"></int>
                 <string role="key" value="_idevice"></string>
-                <reference key="129"></reference>
+                <reference key="130"></reference>
                 <string role="key" value="_instruc"></string>
                 <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -6360,7 +6422,7 @@ text through the text editing buttons associated with the field."></unicode>
                   <string role="key" value=".listitems"></string>
                   <list></list>
                   <string role="key" value="idevice"></string>
-                  <reference key="130"></reference>
+                  <reference key="131"></reference>
                  </dictionary>
                 </instance>
                 <string role="key" value="intlinks_to_anchors"></string>
@@ -6368,7 +6430,7 @@ text through the text editing buttons associated with the field."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <reference key="131"></reference>
+                <reference key="132"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -6388,7 +6450,7 @@ text through the text editing buttons associated with the field."></unicode>
               <string role="key" value="parent"></string>
               <none></none>
               <string role="key" value="parentNode"></string>
-              <reference key="131"></reference>
+              <reference key="132"></reference>
               <string role="key" value="systemResources"></string>
               <list></list>
               <string role="key" value="type"></string>
@@ -6413,20 +6475,20 @@ text through the text editing buttons associated with the field."></unicode>
            <string role="key" value="last_full_node_path"></string>
            <string value="exe-node:Tema%205%3A%20BBDDOO:Sistemas%20Gestores%20de%20Bases%20de%20Datos%20Objeto-Relacional%20%28ORDBMS%29:Defniendo%20la%20tabla%20objeto%20relacional%20cliente"></string>
            <string role="key" value="parent"></string>
-           <reference key="120"></reference>
+           <reference key="121"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
            <list></list>
            <string role="key" value="children"></string>
            <list></list>
           </dictionary>
          </instance>
-         <instance class="exe.engine.node.Node" reference="134">
+         <instance class="exe.engine.node.Node" reference="135">
           <dictionary>
            <string role="key" value="_title"></string>
            <unicode value="Inserción de datos en un ORDB"></unicode>
            <string role="key" value="idevices"></string>
            <list>
-            <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="132">
+            <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="133">
              <dictionary>
               <string role="key" value="_title"></string>
               <unicode value="Free Text"></unicode>
@@ -6442,12 +6504,12 @@ delivered."></unicode>
               <string role="key" value="childs"></string>
               <list></list>
               <string role="key" value="content"></string>
-              <instance class="exe.engine.field.TextAreaField" reference="133">
+              <instance class="exe.engine.field.TextAreaField" reference="134">
                <dictionary>
                 <string role="key" value="_id"></string>
                 <int value="85"></int>
                 <string role="key" value="_idevice"></string>
-                <reference key="132"></reference>
+                <reference key="133"></reference>
                 <string role="key" value="_instruc"></string>
                 <unicode value="Use this field to enter text. This 
 iDevice has no emphasis applied although limited formatting can be applied to 
@@ -6488,7 +6550,7 @@ INSERT INTO Clientes_objtab VALUES (&lt;br /&gt;	2, &lt;br /&gt;	'Gustavo la Ran
                   <string role="key" value=".listitems"></string>
                   <list></list>
                   <string role="key" value="idevice"></string>
-                  <reference key="133"></reference>
+                  <reference key="134"></reference>
                  </dictionary>
                 </instance>
                 <string role="key" value="intlinks_to_anchors"></string>
@@ -6496,7 +6558,7 @@ INSERT INTO Clientes_objtab VALUES (&lt;br /&gt;	2, &lt;br /&gt;	'Gustavo la Ran
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <reference key="134"></reference>
+                <reference key="135"></reference>
                </dictionary>
               </instance>
               <string role="key" value="edit"></string>
@@ -6516,7 +6578,7 @@ INSERT INTO Clientes_objtab VALUES (&lt;br /&gt;	2, &lt;br /&gt;	'Gustavo la Ran
               <string role="key" value="parent"></string>
               <none></none>
               <string role="key" value="parentNode"></string>
-              <reference key="134"></reference>
+              <reference key="135"></reference>
               <string role="key" value="systemResources"></string>
               <list></list>
               <string role="key" value="type"></string>
@@ -6541,7 +6603,7 @@ INSERT INTO Clientes_objtab VALUES (&lt;br /&gt;	2, &lt;br /&gt;	'Gustavo la Ran
            <string role="key" value="last_full_node_path"></string>
            <string value="exe-node:Tema%205%3A%20BBDDOO:Sistemas%20Gestores%20de%20Bases%20de%20Datos%20Objeto-Relacional%20%28ORDBMS%29:Inserci%C3%B3n%20de%20datos%20en%20un%20ORDB"></string>
            <string role="key" value="parent"></string>
-           <reference key="120"></reference>
+           <reference key="121"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
            <list></list>
            <string role="key" value="children"></string>
@@ -6561,13 +6623,13 @@ INSERT INTO Clientes_objtab VALUES (&lt;br /&gt;	2, &lt;br /&gt;	'Gustavo la Ran
    <unicode role="key" value="13"></unicode>
    <reference key="56"></reference>
    <unicode role="key" value="14"></unicode>
-   <reference key="120"></reference>
+   <reference key="121"></reference>
    <unicode role="key" value="15"></unicode>
-   <reference key="128"></reference>
+   <reference key="129"></reference>
    <unicode role="key" value="16"></unicode>
-   <reference key="131"></reference>
+   <reference key="132"></reference>
    <unicode role="key" value="17"></unicode>
-   <reference key="134"></reference>
+   <reference key="135"></reference>
    <unicode role="key" value="18"></unicode>
    <reference key="63"></reference>
    <unicode role="key" value="19"></unicode>
@@ -6575,21 +6637,21 @@ INSERT INTO Clientes_objtab VALUES (&lt;br /&gt;	2, &lt;br /&gt;	'Gustavo la Ran
    <unicode role="key" value="2"></unicode>
    <reference key="10"></reference>
    <unicode role="key" value="20"></unicode>
-   <reference key="125"></reference>
+   <reference key="126"></reference>
    <unicode role="key" value="21"></unicode>
    <reference key="78"></reference>
    <unicode role="key" value="22"></unicode>
-   <reference key="86"></reference>
+   <reference key="87"></reference>
    <unicode role="key" value="23"></unicode>
-   <reference key="96"></reference>
+   <reference key="97"></reference>
    <unicode role="key" value="24"></unicode>
-   <reference key="101"></reference>
+   <reference key="102"></reference>
    <unicode role="key" value="25"></unicode>
-   <reference key="107"></reference>
+   <reference key="108"></reference>
    <unicode role="key" value="26"></unicode>
-   <reference key="112"></reference>
+   <reference key="113"></reference>
    <unicode role="key" value="27"></unicode>
-   <reference key="93"></reference>
+   <reference key="94"></reference>
    <unicode role="key" value="28"></unicode>
    <reference key="83"></reference>
    <unicode role="key" value="3"></unicode>
@@ -6626,7 +6688,7 @@ Prueba y documentación de las aplicaciones desarrolladas."></unicode>
   <string role="key" value="compatibleWithVersion9"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="63"></reference>
+  <reference key="83"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -7975,7 +8037,7 @@ IES Virgen del Carmen"></unicode>
   <dictionary>
    <string role="key" value="14d00e80fd10155f4340de5c016afd18"></string>
    <list>
-    <reference key="97"></reference>
+    <reference key="98"></reference>
    </list>
    <string role="key" value="29e5718ba2c14410fe9d4539049e08c4"></string>
    <list>
@@ -7983,11 +8045,11 @@ IES Virgen del Carmen"></unicode>
    </list>
    <string role="key" value="2c75fb9e3e06c0106eb311379211c5a4"></string>
    <list>
-    <reference key="113"></reference>
+    <reference key="114"></reference>
    </list>
    <string role="key" value="318484bb0c77c18a2158c98642f6a3f5"></string>
    <list>
-    <reference key="117"></reference>
+    <reference key="118"></reference>
    </list>
    <string role="key" value="337c089f042f04101caa076ebf7d4c6c"></string>
    <list>
@@ -7999,19 +8061,19 @@ IES Virgen del Carmen"></unicode>
    </list>
    <string role="key" value="3f8fe398c799d6eb287e82c0014d534f"></string>
    <list>
-    <reference key="89"></reference>
+    <reference key="90"></reference>
    </list>
    <string role="key" value="44d258e3bb1c21d8e27530b167b0adcc"></string>
    <list>
-    <reference key="115"></reference>
+    <reference key="116"></reference>
    </list>
    <string role="key" value="599d86973294b79bd5e601585e5049e7"></string>
    <list>
-    <reference key="109"></reference>
+    <reference key="110"></reference>
    </list>
    <string role="key" value="652b02250130ea62a01845c62f166787"></string>
    <list>
-    <reference key="90"></reference>
+    <reference key="91"></reference>
    </list>
    <string role="key" value="6e8e2671585ac7efeeefc280d9857fba"></string>
    <list>
@@ -8023,7 +8085,7 @@ IES Virgen del Carmen"></unicode>
    </list>
    <string role="key" value="77000ec4099dec68a8bd726ec024c48c"></string>
    <list>
-    <reference key="103"></reference>
+    <reference key="104"></reference>
    </list>
    <string role="key" value="7d1c7a3a10299b8135696066f8b08b0d"></string>
    <list>
@@ -8031,7 +8093,7 @@ IES Virgen del Carmen"></unicode>
    </list>
    <string role="key" value="7e9caea7610d2f45612e079b0d4a028f"></string>
    <list>
-    <reference key="108"></reference>
+    <reference key="109"></reference>
    </list>
    <string role="key" value="7fb8896e4f16fb881e4d95a142aced6d"></string>
    <list>
@@ -8039,7 +8101,7 @@ IES Virgen del Carmen"></unicode>
    </list>
    <string role="key" value="8438823fa22bfa021342de6d7c56d97a"></string>
    <list>
-    <reference key="102"></reference>
+    <reference key="103"></reference>
    </list>
    <string role="key" value="8ee66f8beda4b317ed02ca6cfa3019e1"></string>
    <list>
@@ -8055,19 +8117,23 @@ IES Virgen del Carmen"></unicode>
    </list>
    <string role="key" value="a6882421a5304aaa3ea2ea35d908d14a"></string>
    <list>
-    <reference key="104"></reference>
+    <reference key="105"></reference>
    </list>
    <string role="key" value="a974cd07b39bc10e6e91e42103d425db"></string>
    <list>
-    <reference key="116"></reference>
+    <reference key="117"></reference>
    </list>
    <string role="key" value="d900f7945dfc157ce4024bf8c454176d"></string>
    <list>
-    <reference key="114"></reference>
+    <reference key="115"></reference>
    </list>
    <string role="key" value="ed789632f51020e4ff3818d6f684d9f2"></string>
    <list>
-    <reference key="98"></reference>
+    <reference key="99"></reference>
+   </list>
+   <string role="key" value="edadbb3f4df4fd95178bd328246d0c75"></string>
+   <list>
+    <reference key="84"></reference>
    </list>
   </dictionary>
   <string role="key" value="root"></string>
