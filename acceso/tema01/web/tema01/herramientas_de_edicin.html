@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Herramientas de edición </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.2.1- - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Introducción</a></li>
+   <li><a href="gestin_de_ficheros_y_directorios_con_java.html" class="daddy">Gestión de ficheros y directorios con Java</a>
+   <ul class="other-section">
+      <li><a href="clases_de_java_para_lectura_y_escritura_de_datos.html" class="daddy">Clases de java para lectura y escritura de datos</a>
+      <ul class="other-section">
+         <li><a href="inputstream.html" class="no-ch">InputStream</a></li>
+         <li><a href="outputstream.html" class="no-ch">OutputStream</a></li>
+         <li><a href="printstream.html" class="no-ch">PrintStream</a></li>
+         <li><a href="datainputstream_y_dataoutputstream.html" class="no-ch">DataInputStream y DataOutputStream</a></li>
+         <li><a href="fileinputstream_y_fileoutputstream.html" class="no-ch">FileInputStream y FileOutputStream</a></li>
+         <li><a href="dando_formato_a_las_entradas_y_salidas.html" class="no-ch">Dando formato a las entradas y salidas</a></li>
+      </ul>
+      </li>
+      <li><a href="ficheros_de_acceso_aleatorio.html" class="no-ch">Ficheros de acceso aleatorio</a></li>
+      <li><a href="copia_de_archivos_y_gestin_de_directorios.html" class="no-ch">Copia de archivos y gestión de directorios</a></li>
+      <li><a href="conexiones_de_red.html" class="no-ch">Conexiones de red</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="repaso_xml.html" class="current-page-parent daddy">Repaso XML</a>
+   <ul>
+      <li><a href="xml_es_jerrquico.html" class="no-ch">XML es jerárquico</a></li>
+      <li><a href="caractersticas_y_etiquetas.html" class="no-ch">Características y etiquetas</a></li>
+      <li><a href="declaracin_de_un_documento.html" class="no-ch">Declaración de un documento</a></li>
+      <li><a href="xml__bien_formado_y_vlido.html" class="no-ch">XML  "bien formado" y "válido"</a></li>
+      <li><a href="espacios_de_nombres.html" class="no-ch">Espacios de nombres</a></li>
+      <li><a href="tecnologas_xml.html" class="no-ch">Tecnologías XML</a></li>
+      <li id="active"><a href="herramientas_de_edicin.html" class="active no-ch">Herramientas de edición</a></li>
+      <li><a href="esquemas_xml.html" class="daddy">Esquemas XML</a>
+      <ul class="other-section">
+         <li><a href="dtd.html" class="no-ch">DTD</a></li>
+         <li><a href="xmlschema.html" class="no-ch">XMLSchema</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="repaso_json.html" class="daddy">Repaso JSON</a>
+   <ul class="other-section">
+      <li><a href="conceptos_y_terminologa.html" class="no-ch">Conceptos y terminología</a></li>
+      <li><a href="estructuras_json.html" class="daddy">Estructuras JSON</a>
+      <ul class="other-section">
+         <li><a href="objetos_de_datos_clavevalor.html" class="no-ch">Objetos de datos (clave:valor)</a></li>
+         <li><a href="arrays_de_datos.html" class="no-ch">Arrays de datos</a></li>
+      </ul>
+      </li>
+      <li><a href="json_schema.html" class="no-ch">JSON Schema</a></li>
+   </ul>
+   </li>
+   <li><a href="parsing_y_binding_de_xml_con_java.html" class="daddy">Parsing y binding de XML con Java</a>
+   <ul class="other-section">
+      <li><a href="marshallingunmarshalling_xml_con_java.html" class="no-ch">Marshalling/unmarshalling XML con Java</a></li>
+      <li><a href="procesado_de_xml_con_java_parsing.html" class="daddy">Procesado de XML con Java: Parsing</a>
+      <ul class="other-section">
+         <li><a href="enfoque_dom.html" class="no-ch">Enfoque DOM</a></li>
+         <li><a href="enfoque_sax.html" class="no-ch">Enfoque SAX</a></li>
+         <li><a href="enfoques_hbridos.html" class="no-ch">Enfoques híbridos</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="conversin_de_xml_a_otros_formatos.html" class="daddy">Conversión de XML a otros formatos</a>
+   <ul class="other-section">
+      <li><a href="dehacia_excel.html" class="no-ch">De/hacia Excel</a></li>
+      <li><a href="dehacia_powerpoint.html" class="no-ch">De/hacia PowerPoint</a></li>
+      <li><a href="dehacia_word.html" class="no-ch">De/hacia Word</a></li>
+      <li><a href="pdf.html" class="no-ch">PDF</a></li>
+   </ul>
+   </li>
+   <li><a href="excepciones_deteccin_y_tratamiento.html" class="no-ch">Excepciones, detección y tratamiento.</a></li>
+   <li><a href="pruebas_y_documentacin.html" class="daddy">Pruebas y documentación</a>
+   <ul class="other-section">
+      <li><a href="junit.html" class="no-ch">jUnit</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="tecnologas_xml.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="esquemas_xml.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Herramientas de edición</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id70">
+<div class="iDevice emphasis0">
+<div id="ta70_85" class="block iDevice_content">
+<h3>1. Introducción: Parser con validación y sin validación</h3>
+<p>Un parser o procesador o analizador sintáctico lee el documento XML y verifica que es XML bien formado , algunos también comprueban que el código XML sea válido.</p>
+<p>El parser o procesador de XML es la herramienta principal de cualquier aplicación XML. Mediante el parser no solamente podemos comprobar si nuestros documentos son bien formados o válidos, sino que también podemos incorporarlos a nuestras aplicaciones, de manera que estas puedan manipular y trabajar con documentos XML.</p>
+<p>Podemos dividir los parsers XML en dos grupos principales:</p>
+<ul>
+<li>sin validación: el parser no valida el documento utilizando un DTD, sino que sólo chequea que el documento esté bien formado de acuerdo a las reglas de sintaxis de XML (sólo hay una etiqueta raíz, las etiquetas están cerradas, etc).</li>
+<li>con validación: además de comprobar que el documento está bien formado según las reglas anteriores, comprueba el documento utilizando un DTD (ya sea interno o externo).</li>
+</ul>
+<p>En el caso de utilizar un DTD, es preferible utilizar un parser con validación.</p>
+<h3>2. Parsers XML</h3>
+<p>Normalmente no nos tendremos que preocupar de buscar un parser concreto para comprobar la validez de nuestros documentos XML, ya que los desarrolladores de las aplicaciones que utilizaremos como navegadores o visualizadores o transformadores de esos documentos en el documento final que el usuario ve, incluirán sus propios parsers. Un ejemplo de esto es el caso del Microsoft Internet Explorer 5 (o superior), que utiliza el parser de MS (incluido en la librería MSXML.DLL); o el caso de Mozilla, que internamente utiliza el parser EXPAT (escrito en C).</p>
+<p>A continuación teneis un parser sin validación escrito en JavaScript. Presenta el árbol del documento a comprobar.</p>
+<p class="titulillo">Teclea o copia el código XML aquí y pulsa en "Procesar"</p>
+<form name="edit">
+<p><textarea name="in" rows="10" cols="80">  &lt;?xml version="1.0"?&gt;
+  &lt;mydoc format="simple"&gt;
+   &lt;mytitle&gt;titulo&lt;/mytitle&gt;
+   &lt;main someatt="someval"&gt;
+    &lt;para&gt;un parrafo&lt;/para&gt;
+    &lt;para&gt;segundo parrafo&lt;/para&gt;
+    &lt;para&gt;tercer parrafo&lt;/para&gt;
+   &lt;/main&gt;
+  &lt;/mydoc&gt;
+  
+ </textarea></p>
+<h3>3. Modelo de Objeto Documento (DOM)</h3>
+<p>Para extraer la información que contiene un documento XML, se podría escribir código para analizar el contenido del archivo XML, pues no deja de ser un archivo de texto, tal y como lo podríamos hacer con HTML. Sin embargo, esta solución no es muy aconsejable y desaprovecharía una de las ventajas de XML: el ser una forma estructurada de representar datos.</p>
+<p>La mejor forma de recuperar información de archivos XML es utilizar un parser de XML, que sea compatible con el modelo de objeto de documento (DOM) de XML. DOM define un conjunto estándar de comandos que los parsers devuelven para facilitar el acceso al contenido de los documentos XML desde sus programas. Un analizador de XML compatible con DOM toma los datos de un documento XML y los expone mediante un conjunto de objetos que se pueden programar.</p>
+<p>DOM para XML es un modelo de objetos estándar (propuesto por el <a href="http://www.w3.org/DOM">W3C</a>) que muestra el contenido de un documento XML. La Especificación del Modelo de Objeto de documento (DOM) del W3C define actualmente lo que debería mostrar un DOM como propiedades, métodos y eventos.</p>
+<p>En <a href="http://www.asptutor.com/xml/index5.asp">http://www.asptutor.com/xml/index5.asp</a> puedes ver una introducción de como se haría en Visual Basic, en <a href="http://java.sun.com/webservices/docs/1.1/tutorial/doc/JAXPDOM.html#wp66050">http://java.sun.com/webservices/docs/1.1/tutorial/doc/JAXPDOM.html#wp66050</a>como poder hacerlo con JAVA, en <a href="http://search.cpan.org/src/ENNO/libxml-enno-1.02/html/XML/DOM.html">http://search.cpan.org/src/ENNO/libxml-enno-1.02/html/XML/DOM.html</a> como hacerlo con Perl, en <a href="http://expat.sourceforge.net">http://expat.sourceforge.net</a> como hacerlo en C y en C++ usando expat (el parser del Mozilla) y en <a href="http://msdn.microsoft.com/msdnmag/issues/01/01/xml/default.aspx">http://msdn.microsoft.com/msdnmag/issues/01/01/xml/default.aspx</a> como hacerlo en C# .NET</p>
+<p>Veamos un ejemplo, supongamos el siguiente trozo de código XML:</p>
+<pre class="codigo"> &amp;lt;TABLE&amp;gt;
+  &amp;lt;TBODY&amp;gt; 
+   &amp;lt;TR&amp;gt; 
+       &amp;lt;TD&amp;gt;Shady Grove&amp;lt;/TD&amp;gt;
+       &amp;lt;TD&amp;gt;Aeolian&amp;lt;/TD&amp;gt; 
+   &amp;lt;/TR&amp;gt; 
+   &amp;lt;TR&amp;gt;
+       &amp;lt;TD&amp;gt;Over the River, Charlie&amp;lt;/TD&amp;gt;        
+       &amp;lt;TD&amp;gt;Dorian&amp;lt;/TD&amp;gt; 
+   &amp;lt;/TR&amp;gt; 
+  &amp;lt;/TBODY&amp;gt;
+ &amp;lt;/TABLE&amp;gt;
+</pre>
+<p>El DOM representaría esta tabla de la siguiente forma:<br /><br /> <img src="tabla.gif" height="205" width="368" /></p>
+<h3>4. Trabajando con DOM en Perl: XML::DOM</h3>
+<p>En este apartádo vamos a ver como trabajar con el Modelo de Objeto Documento (DOM) usando Perl, para los que no sepan Perl en <a href="http://flanagan.ugr.es/perl">http://flanagan.ugr.es/perl</a> hay un tutorial en castellano de Perl y en <a href="http://flanagan.ugr.es/dbi/modulos.htm">http://decsai.ugr.es/~fjgc/dbi/modulos.htm</a> como instalar módulos en perl.</p>
+<p>Para manejar el DOM bajo Perl vamos a utilizar el módulo <b>XML::DOM</b> que lo podeis encontrar en <a href="http://search.cpan.org/search?dist=libxml-enno">http://search.cpan.org/search?dist=libxml-enno</a>. El módulo XML::DOM se basa en el módulo XML::Parser y éste a su vez en la librería del expat (parser de libre distribución del Mozilla). Para consultar los métodos y objetos del módulo XML::DOM podeis mirar en <a href="http://theoryx5.uwinnipeg.ca/CPAN/data/libxml-enno/XML/DOM.html">http://theoryx5.uwinnipeg.ca/CPAN/data/libxml-enno/XML/DOM.html</a>.</p>
+<p>Para comprender mejor como se trabaja con el DOM en Perl, vamos a a usar el siguiente documento XML de ejemplo:</p>
+<pre class="codigo">&amp;lt;?xml version="1.0" standalone="yes"?&amp;gt;
+&amp;lt;noticias&amp;gt;
+        &amp;lt;!--Noticia 1 --&amp;gt;
+	&amp;lt;noticia tipo="economia"&amp;gt;
+	  &amp;lt;titulo url="http://www.elpais.es/articulo.html?anchor=elpepieco&amp;amp;amp;xref=20010215elpepieco_14&amp;amp;amp;type=Tes&amp;amp;amp;d_date=20010215"&amp;gt;
+		Microsoft, investigado por invertir en un rival
+	  &amp;lt;/titulo&amp;gt;
+          &amp;lt;fecha&amp;gt;15 de febrero de 2001&amp;lt;/fecha&amp;gt;
+	  &amp;lt;contenido&amp;gt;
+               El gigante de la informatica Microsoft, pendiente
+		de una apelacion para evitar ser dividido en dos por
+		vulnerar la competencia, está siendo investigado otra vez por las autoridades
+		antimonopolio, que sospechan de por que el mayor fabricante de programas invirtio
+		135 millones de dolares (24.165 millones de pesetas) en su rival Corel.
+	  &amp;lt;/contenido&amp;gt;
+	 &amp;lt;/noticia&amp;gt;
+
+	&amp;lt;!--Noticia 2 --&amp;gt;
+	&amp;lt;noticia tipo="internet"&amp;gt;
+	  &amp;lt;titulo url="http://www.abc.es/Internet/noticia.asp?id=13298&amp;amp;amp;dia=18022001"&amp;gt;
+		 Clinicas reales y virtuales para tratar adictos a Internet
+	  &amp;lt;/titulo&amp;gt;
+          &amp;lt;fecha&amp;gt;18 de febrero de 2001&amp;lt;/fecha&amp;gt;
+	  &amp;lt;contenido&amp;gt;
+                   La aparicion de una nueva patologia, la "dependencia" a internet, esta confirmada por la creacion
+                   de numerosas clinicas en Estados Unidos, reales o virtuales, para tratar de remediar las
+                   enfermedades de la red....
+	  &amp;lt;/contenido&amp;gt;
+	 &amp;lt;/noticia&amp;gt;
+
+&amp;lt;/noticias&amp;gt;
+</pre>
+<p>En el ejemplo anterior se tiene un documento XML que está pensado para trabajar con noticias que aparecen en Internet. Lo que vamos a hacer es, usando Perl y el módulo XML::DOM, un programa que procese el documento xml y muestre el titulo de las noticias</p>
+<pre class="codigo">#!/usr/bin/perl
+
+#Indicamos al perl que use el modil XML::DOM
+use XML::DOM;
+
+#Creamos un parser XML
+$parser = new XML::DOM::Parser;
+
+#Hacemos el parser XML al fichero ejmploDOM.xml y obtenemos el DOM
+$doc = $parser-&amp;gt;parsefile ("ejemploDOM.xml");
+
+# Cogemos el titulo todas las noticias del documento XML
+$noticias = $doc-&amp;gt;getElementsByTagName ("titulo");
+
+#Cogemos el número de noticias
+$n = $noticias-&amp;gt;getLength;
+
+#Escribimos el título de cada noticia
+for (my $i = 0; $i &amp;lt; $n; $i++)
+{
+   #Cogemos el tiltulo de la noticia i
+   my $noticia = $noticias-&amp;gt;item ($i);
+
+   #Imprimimos el nombre de la etiqueta
+   print $noticia-&amp;gt;getTagName;
+   print ": ";
+
+   #Cogemos el hijo (texto) de la etiqueta que estamos procesando
+   my $noticia_contenido = $noticia-&amp;gt;getFirstChild;
+
+   #Imprimimos el contenido del hijo
+   print $noticia_contenido-&amp;gt;getData;
+   print "\n";
+}
+
+# Escribimos la salida del parser (el documento XML) en un fichero
+$doc-&amp;gt;printToFile ("salida.xml");
+
+# Escribimos el documento XMl en pantalla
+#print $doc-&amp;gt;toString;
+
+# Limpiamos la memoria ocupada por el documento XML
+$doc-&amp;gt;dispose;
+
+</pre>
+<p>Ahora vamos a hacer un segundo ejemplo donde mostraremos las noticias, y la url correspondiente</p>
+<pre class="codigo">#!/usr/bin/perl
+
+#Usamos el módulo XML::DOM de Perl
+use XML::DOM;
+
+#Creamos un parser XML
+$parser = new XML::DOM::Parser;
+
+#Hacemos el parser XML al fichero ejmploDOM.xml
+$doc = $parser-&amp;gt;parsefile ("ejemploDOM.xml");
+
+# Cogemos los nodos del DOM cuyas etiquetas sean titulo
+$noticias = $doc-&amp;gt;getElementsByTagName ("titulo");
+
+#Cogemos el número de noticias
+$n = $noticias-&amp;gt;getLength;
+
+#Escribimos el título de cada noticia
+for ($i = 0; $i &amp;lt; $n; $i++)
+{
+ 	#Cogemos el tiltulo de la noticia i
+	$noticia = $noticias-&amp;gt;item ($i);
+
+
+	#Imprimimos el nombre de la etiqueta
+	print $noticia-&amp;gt;getTagName;
+	print ": ";
+
+
+	#Cogemos el hijo (texto) de la etiqueta que estamos procesando
+	my $noticia_contenido = $noticia-&amp;gt;getFirstChild;
+
+
+	#Imprimimos el contenido del hijo
+	print $noticia_contenido-&amp;gt;getData;
+
+
+	#Cogemos el valor del atributo url
+	$mi_url= $noticia-&amp;gt;getAttributeNode("url");
+
+
+	#Imprimimos el contenido de dicho atributo
+	print " (href=";
+	print $mi_url-&amp;gt;getValue;
+	print " )\n";
+}
+
+# Limpiamos la memoria ocupada por el documento XML
+$doc-&amp;gt;dispose;
+
+</pre>
+<p>Ahora vamos a hacer un tercer ejemplo donde recorremos el DOM</p>
+<pre class="codigo">#!/usr/bin/perl
+
+#Usamos el módulo XML::DOM de Perl
+use XML::DOM;
+
+#Creamos un parser XML
+my $parser = new XML::DOM::Parser;
+
+#Hacemos el parser XML al fichero ejmploDOM.xml
+my $doc = $parser-&amp;gt;parsefile ("ejemploDOM.xml");
+
+#Cogemos el nodo raiz
+my $raiz = $doc-&amp;gt;getFirstChild;
+
+#Como el nodo raiz está en lo alto de la jerarquía, ponemos profundidad =0
+my $profundidad=0;
+
+#Mostramos el árbol xml
+muestra_arbol($raiz,$profundidad);
+
+# Limpiamos la memoria ocupada por el documento XML
+$doc-&amp;gt;dispose;
+#------------------------------------------------------------------------
+sub muestra_arbol()
+{
+ 	#Cogemos los dos parámetros el nodo del árbol y la profundidad
+	my ($nodo, $profundidad)=@_;
+
+
+	#Miramos el tipo de nodo, si es de texto (hoja del DOM) decimos que hay datos
+	if ($nodo-&amp;gt;getNodeType==TEXT_NODE) {
+		for (my $i=0; $i &amp;lt; $profundidad; $i++) {print " "};
+		print $nodo-&amp;gt;getData;
+		print "\n";
+	}
+
+        #Miramos el tipo de nodo, si es un comentario
+	elsif ($nodo-&amp;gt;getNodeType==COMMENT_NODE) {
+		for (my $i=0; $i &amp;lt; $profundidad; $i++) {print " "};
+		print "COMENTARIO\n";
+	}
+        #No es nodo hoja, lo mostramos y recorremos sus hijos
+	else
+	{
+         	 #Nos vamos a la derecha dependiendo de la profundidad
+		 for (my $i=0; $i &amp;lt; $profundidad; $i++) {print" "};
+
+		 #Mostramos la etiqueta del nodo
+		 print $nodo-&amp;gt;getTagName;
+		 print "\n";
+
+
+		#Cojemos los nodos hijos y el número que hay
+		my $hijos=$nodo-&amp;gt;getChildNodes;
+		my $n=$hijos-&amp;gt;getLength;
+
+		#Para cada nodo hijo, mostramos su etiqueta y mostramos su subarbol
+		for (my $i;$i &amp;lt; $n; $i++)
+		{
+                   #Cogemos el hijo i
+                   my $hijo=$hijos-&amp;gt;item($i);
+
+                   #Exploramos el subarbol del hijo i
+                   muestra_arbol($hijo,profundidad+1);
+		}
+
+
+	}
+}
+#------------------------------------------------------------------------
+
+</pre>
+<p>Resumiendo, como podemos ver, con XML es mucho más fácil (dentro de lo que cabe) procesar la información que lo era antes con HTML, ya que para procesar una página HTML (no XHTML) teníamos que trabajar con ella como si fuera texto plano</p>
+</form>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="tecnologas_xml.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="esquemas_xml.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="tknika_js.js"></script></body></html>
