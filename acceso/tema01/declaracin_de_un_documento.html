@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Declaración de un documento </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.2.1- - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Introducción</a></li>
+   <li><a href="gestin_de_ficheros_y_directorios_con_java.html" class="daddy">Gestión de ficheros y directorios con Java</a>
+   <ul class="other-section">
+      <li><a href="clases_de_java_para_lectura_y_escritura_de_datos.html" class="daddy">Clases de java para lectura y escritura de datos</a>
+      <ul class="other-section">
+         <li><a href="inputstream.html" class="no-ch">InputStream</a></li>
+         <li><a href="outputstream.html" class="no-ch">OutputStream</a></li>
+         <li><a href="printstream.html" class="no-ch">PrintStream</a></li>
+         <li><a href="datainputstream_y_dataoutputstream.html" class="no-ch">DataInputStream y DataOutputStream</a></li>
+         <li><a href="fileinputstream_y_fileoutputstream.html" class="no-ch">FileInputStream y FileOutputStream</a></li>
+         <li><a href="dando_formato_a_las_entradas_y_salidas.html" class="no-ch">Dando formato a las entradas y salidas</a></li>
+      </ul>
+      </li>
+      <li><a href="ficheros_de_acceso_aleatorio.html" class="no-ch">Ficheros de acceso aleatorio</a></li>
+      <li><a href="copia_de_archivos_y_gestin_de_directorios.html" class="no-ch">Copia de archivos y gestión de directorios</a></li>
+      <li><a href="conexiones_de_red.html" class="no-ch">Conexiones de red</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="repaso_xml.html" class="current-page-parent daddy">Repaso XML</a>
+   <ul>
+      <li><a href="xml_es_jerrquico.html" class="no-ch">XML es jerárquico</a></li>
+      <li><a href="caractersticas_y_etiquetas.html" class="no-ch">Características y etiquetas</a></li>
+      <li id="active"><a href="declaracin_de_un_documento.html" class="active no-ch">Declaración de un documento</a></li>
+      <li><a href="xml__bien_formado_y_vlido.html" class="no-ch">XML  "bien formado" y "válido"</a></li>
+      <li><a href="espacios_de_nombres.html" class="no-ch">Espacios de nombres</a></li>
+      <li><a href="tecnologas_xml.html" class="no-ch">Tecnologías XML</a></li>
+      <li><a href="herramientas_de_edicin.html" class="no-ch">Herramientas de edición</a></li>
+      <li><a href="esquemas_xml.html" class="daddy">Esquemas XML</a>
+      <ul class="other-section">
+         <li><a href="dtd.html" class="no-ch">DTD</a></li>
+         <li><a href="xmlschema.html" class="no-ch">XMLSchema</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="repaso_json.html" class="daddy">Repaso JSON</a>
+   <ul class="other-section">
+      <li><a href="conceptos_y_terminologa.html" class="no-ch">Conceptos y terminología</a></li>
+      <li><a href="estructuras_json.html" class="daddy">Estructuras JSON</a>
+      <ul class="other-section">
+         <li><a href="objetos_de_datos_clavevalor.html" class="no-ch">Objetos de datos (clave:valor)</a></li>
+         <li><a href="arrays_de_datos.html" class="no-ch">Arrays de datos</a></li>
+      </ul>
+      </li>
+      <li><a href="json_schema.html" class="no-ch">JSON Schema</a></li>
+   </ul>
+   </li>
+   <li><a href="parsing_y_binding_de_xml_con_java.html" class="daddy">Parsing y binding de XML con Java</a>
+   <ul class="other-section">
+      <li><a href="marshallingunmarshalling_xml_con_java.html" class="no-ch">Marshalling/unmarshalling XML con Java</a></li>
+      <li><a href="procesado_de_xml_con_java_parsing.html" class="daddy">Procesado de XML con Java: Parsing</a>
+      <ul class="other-section">
+         <li><a href="enfoque_dom.html" class="no-ch">Enfoque DOM</a></li>
+         <li><a href="enfoque_sax.html" class="no-ch">Enfoque SAX</a></li>
+         <li><a href="enfoques_hbridos.html" class="no-ch">Enfoques híbridos</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="conversin_de_xml_a_otros_formatos.html" class="daddy">Conversión de XML a otros formatos</a>
+   <ul class="other-section">
+      <li><a href="dehacia_excel.html" class="no-ch">De/hacia Excel</a></li>
+      <li><a href="dehacia_powerpoint.html" class="no-ch">De/hacia PowerPoint</a></li>
+      <li><a href="dehacia_word.html" class="no-ch">De/hacia Word</a></li>
+      <li><a href="pdf.html" class="no-ch">PDF</a></li>
+   </ul>
+   </li>
+   <li><a href="excepciones_deteccin_y_tratamiento.html" class="daddy">Excepciones, detección y tratamiento.</a>
+   <ul class="other-section">
+      <li><a href="deteccin_de_excepciones_en_java.html" class="no-ch">Detección de excepciones en Java</a></li>
+      <li><a href="excepciones_en_nuestros_componentes.html" class="no-ch">Excepciones en nuestros componentes</a></li>
+   </ul>
+   </li>
+   <li><a href="pruebas_y_documentacin.html" class="daddy">Pruebas y documentación</a>
+   <ul class="other-section">
+      <li><a href="junit.html" class="no-ch">jUnit</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="caractersticas_y_etiquetas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="xml__bien_formado_y_vlido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Declaración de un documento</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id67">
+<div class="iDevice emphasis0">
+<div id="ta67_85" class="block iDevice_content">
+<h3>Prólogo y declaración de tipo de documento</h3>
+<p>Aunque no es obligatorio los documentos XML pueden, y deberían, comenzar con una línea que describa la versión de XML, el tipo de documento y otras cosas.</p>
+<p>La primera línea del prólogo o "declaración" permite especificar la versión de XML usada, hasta el momento, sólo existe la "1.0" y la codificación de caracter (US-ASCII, UTF-8, BIG5, ISO-8850-7,etc.). En general, para el castellano, usamos UTF-7 (código Unicode del que ASCII es un subconjunto) o ISO-8859-1.</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">&lt;?xml version="1.0" encoding="UTF-7" ?&gt;
+&lt;nada&gt; Ejemplo &lt;/nada&gt;
+</pre>
+<p>La segunda línea, o "declaración de tipo de documento XML", define que tipo de documento estamos creando, es decir, definimos que Declaración de Tipo de Documento (DTD - Document Type Definition) cumple y define los datos que de contiene el documento XML.</p>
+<p class="titulillo">Ejemplos:</p>
+<pre class="codigo">&lt;?xml version="1.0" encoding="UTF-7" ?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt; 
+  &lt;body bgcolor="yellow "&gt; 
+    &lt;p&gt; 
+      Ejemplo 
+    &lt;/p&gt; 
+  &lt;/body&gt; 
+&lt;/html&gt;
+</pre>
+<pre class="codigo">&lt;?xml version="1.0" encoding="UTF-7" ?&gt;
+&lt;!DOCTYPE ejemplo SYSTEM "http://www.ejemplos.xml/ejemplo.dtd"&gt;
+&lt;nada&gt; Ejemplo &lt;/nada&gt;
+</pre>
+<p>Un documento XML es válido si tiene asociado una DTD y el documento cumple las restricciones que la DTD expresa.</p>
+<p>Sólo puede haber un elemento raiz, en el que están contenidos todos los demás, es decir, la jerarquía de elementos XML sólo puede tener un elemento inicial.</p>
+<h3>Declaración de documento Standalone</h3>
+<p>En la parte del prólogo dentro de la "declaración" se puede incluir una declaración de documento standalone que controla que componentes de la DTD son necesarios para completar el procesamiento del documento.</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">&lt;?xml version="1.0" standalone='yes'?&gt;
+ &lt;nombre&gt;Richal&lt;/nombre&gt;
+</pre>
+<p>El valor "yes" indica que no existen declaraciones de marcas externas a la entidad documento. El valor "no" indica que existe o que pueden haber dichas declaraciones de marcas. La declaración de un documento standalone sólo denota la presencia de declaraciones externas.</p>
+<h3>Elementos</h3>
+<p>Los elementos XML pueden tener contenido (más elementos, caracteres o ambos a la vez), o bien ser elementos vacíos. Un elemento con contenido es, por ejemplo:</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">...
+ &lt;nombre&gt;Richal&lt;/nombre&gt;
+...
+</pre>
+<p>Siempre empieza con &lt;etiqueta&gt; que puede contener atributos o no, y termina con &lt;/etiqueta&gt; que debe tener el mismo nombre. Al contrario que en HTML, en XML siempre se debe cerrar un elemento.</p>
+<p>Hay que tener en cuenta que el símbolo "&lt;" siempre se interpreta como inicio de una etiqueta XML. Si no es el caso, el documento no estará bien-formado. Para usar ciertos símbolos se usarán las entidades predefinidas.</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">...
+ &lt;nombre&gt;Fulanito&lt;/nombre&gt;
+ &lt;aviso tipo="emergencia" gravedad="mortal"&gt;Que no cunda el pánico&lt;/aviso&gt;
+...
+</pre>
+<p>HTML permite elementos sin contenido, XML también, pero la etiqueta debe ser de la siguiente forma: &lt;elemento-sin-contenido/&gt;, que puede contener atributos o no, esto es debido que no hay una etiqueta de cierre que delimite el contenido . El los siguientes ejemplos se ve esto:</p>
+<p class="titulillo">Ejemplos:</p>
+<pre class="codigo">...
+ &lt;identificador DNI="23123244"/&gt;
+...
+</pre>
+<pre class="codigo">&lt;?xml version="1.0" encoding="UTF-7" ?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt; 
+  &lt;body bgcolor="yellow "&gt; 
+    &lt;hr/&gt; 
+    &lt;p&gt; 
+      Entre lineas
+    &lt;/p&gt; 
+    &lt;hr/&gt;
+  &lt;/body&gt; 
+&lt;/html&gt;
+</pre>
+<h3>Atributos</h3>
+<p>Los elementos pueden tener atributos, que son una manera de incorporar características o propiedades a los elementos de un documento.</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">...
+ &lt;alumno nota="5 pelón" asistencia="Nula"&gt;Richalson&lt;/alumno&gt;
+...
+</pre>
+<p>En una Definición de Tipo de Documento, se especifica los atributos que puede tener cada tipo de elemento, así como sus valores y tipos de valor posible. Los atributos tienen que estar delimitado con comillas dobles ( " ) o comilla simple ( ' ). Cuando se usa uno para delimitar el valor del atributo, el otro se puede usar dentro.</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">...
+&lt;noticia titulo="Richal O'Donnel gana el pulitzer" autor='Pepe "Porras"'&gt;
+....
+&lt;/noticia&gt;
+...
+</pre>
+<p>A veces, un elemento con contenido puede modelarse como un elemento vacío con atributos.</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">...
+&lt;gato&gt;&lt;nombre&gt;Micifú&lt;/nombre&gt;&lt;raza&gt;Persa&lt;/raza&gt;&lt;/gato&gt;
+....
+&lt;gato raza="Persa"&gt;Micifú&lt;/gato&gt;
+....
+&lt;gato raza="Persa" nombre="Micifú"/&gt;
+....
+</pre>
+<h3>Comentarios</h3>
+<p>Los comentarios pueden aparecer en cualquier punto del documento, fuera del resto de las marcas,es decir, fuera de las declaraciones etiquetas u otros comentatios.Tienen el mismo formato que los comentarios de HTML, por lo que comienzan con "&lt;!--" y terminan con "--&gt;". La cadena "--" no puede aparece dentro de un comentario.</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">...
+&lt;!-- Que gran gato es Micifú --&gt;
+&lt;gato raza="Persa" nombre="Micifú"/&gt;
+....
+</pre>
+<h3>Entidades predefinidas</h3>
+<p>En XML 1.0 se definen cinco entidades para representar caracteres especiales y que no se interpreten como marcas por el parser XML. Es decir, asi podemos utilizar, por ejemplo, el carácter "&lt;" sin que se interprete como comienzo de una etiqueta XML.</p>
+<table class="tabla" cellpadding="5" cellspacing="1" align="right" border="1">
+<tbody>
+<tr><th valign="MIDDLE">ENTIDAD</th><th valign="MIDDLE">CARACTER</th></tr>
+<tr>
+<td>&amp;amp;</td>
+<td>&amp;</td>
+</tr>
+<tr>
+<td>&amp;lt;</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>&amp;gt;</td>
+<td>&gt;</td>
+</tr>
+<tr>
+<td>&amp;apos;</td>
+<td>'</td>
+</tr>
+<tr>
+<td>&amp;quot;</td>
+<td>"</td>
+</tr>
+</tbody>
+</table>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">&lt;?xml version="1.0" encoding="UTF-7" standalone='yes'?&gt;
+&lt;ejemplos&gt;
+&lt;descripcion&gt;Lo siguiente es un ejemplo de HTML.&lt;/descripcion&gt;
+&lt;ejemplo&gt;
+     &amp;lt;HTML&amp;gt;
+       &amp;lt;HEAD&amp;gt;
+        &amp;lt;TITLE&amp;gt;Rock &amp;amp; Roll&amp;lt;/TITLE&amp;gt;
+       &amp;lt;/HEAD&amp;gt;
+&lt;/ejemplo&gt;
+&lt;/ejemplos&gt;
+
+</pre>
+<h3>Secciones CDATA</h3>
+<p>Las secciones CDATA también nos van a permitir especificar datos, utilizando cualquier carácter, especial o no, sin que se interprete como una marca XML. La razón es que asi se puede leer más fácilmente el documento XML sin tener que descifrar los códigos de las entidades. Las secciones CDATA empiezan por la cadena "&lt;![CDATA[" y terminan con la cadena "]]&gt;" y sólo ésta última se reconoce como marca. No se pueden anidar secciones CDATA</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">&lt;?xml version="1.0" encoding="UTF-7" standalone='yes'?&gt;
+&lt;ejemplos&gt;
+&lt;descripcion&gt;Lo siguiente es un ejemplo de HTML.&lt;/descripcion&gt;
+&lt;ejemplo&gt;
+   &lt;![CDATA[
+     &lt;HTML&gt;
+       &lt;HEAD&gt;
+        &lt;TITLE&gt;Rock &amp; Roll&lt;/TITLE&gt;
+       &lt;/HEAD&gt;
+   ]]&gt;
+&lt;/ejemplo&gt;
+&lt;/ejemplos&gt;
+
+</pre>
+<h3>Instrucciones de procesamiento</h3>
+<p>Las intrucciones de procesamiento permiten a los documentos XML contener instrucciones para las aplicaciones, van entre <b>&lt;?</b> y <b>?&gt;</b></p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">&lt;?xml version="1.0"?&gt;
+&lt;?cocoon-process type="xslt"?&gt;
+....
+</pre>
+<p>no son parte del documento, pero deben ser pasadas a la aplicación. En el ejemplo, se le dice al cocoon (herramienta para publicar xml en la web) que la página XML es un XSLT (que ya vereis lo que es).</p>
+<h3>Identificación del lenguaje</h3>
+<p>En el procesado de documentos puede ser útil la identificación entre el lenguaje natural o el lenguaje formal, en el que está escrito el contenido. Una atributo especial denominado <b>xml:lang</b> puede ser insertado en los documentos para especificar el lenguaje utilizado en los contenidos y los valores de atributo de cualquier elemento en un documento.</p>
+<p class="titulillo">Ejemplo:</p>
+<pre class="codigo">&lt;?xml version="1.0" encoding="UTF-7" standalone='yes'?&gt;
+&lt;ejemplos&gt;
+ &lt;p xml:lang="en"&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+ &lt;p xml:lang="en-GB"&gt;What colour is it?&lt;/p&gt;
+ &lt;p xml:lang="en-US"&gt;What color is it?&lt;/p&gt;
+ &lt;sp who="Faust" desc='leise' xml:lang="de"&gt;
+   &lt;l&gt;Habe nun, ach! Philosophie,&lt;/l&gt;
+   &lt;l&gt;Juristerei, und Medizin&lt;/l&gt;
+   &lt;l&gt;und leider auch Theologie&lt;/l&gt;
+   &lt;l&gt;durchaus studiert mit heißem Bemüh'n.&lt;/l&gt;
+ &lt;/sp&gt;
+ &lt;sp who="yo"  desc='comentario' xml:lang="es"&gt;
+   &lt;l&gt;No me entero de un pimiento&lt;/l&gt;
+&lt;/sp&gt;
+&lt;/ejemplos&gt;
+</pre>
+<p>Los códigos para cada país se puede encontrar en <a href="http://www.iana.org/cctld/cctld-whois.htm">http://www.iana.org/cctld/cctld-whois.htm</a> y más información en <a href="http://www.ietf.org/rfc/rfc1766.txt">http://www.ietf.org/rfc/rfc1766.txt</a></p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="caractersticas_y_etiquetas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="xml__bien_formado_y_vlido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="tknika_js.js"></script></body></html>

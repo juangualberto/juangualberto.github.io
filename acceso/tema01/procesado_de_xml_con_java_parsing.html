@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Procesado de XML con Java: Parsing </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.2.1- - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Introducción</a></li>
+   <li><a href="gestin_de_ficheros_y_directorios_con_java.html" class="daddy">Gestión de ficheros y directorios con Java</a>
+   <ul class="other-section">
+      <li><a href="clases_de_java_para_lectura_y_escritura_de_datos.html" class="daddy">Clases de java para lectura y escritura de datos</a>
+      <ul class="other-section">
+         <li><a href="inputstream.html" class="no-ch">InputStream</a></li>
+         <li><a href="outputstream.html" class="no-ch">OutputStream</a></li>
+         <li><a href="printstream.html" class="no-ch">PrintStream</a></li>
+         <li><a href="datainputstream_y_dataoutputstream.html" class="no-ch">DataInputStream y DataOutputStream</a></li>
+         <li><a href="fileinputstream_y_fileoutputstream.html" class="no-ch">FileInputStream y FileOutputStream</a></li>
+         <li><a href="dando_formato_a_las_entradas_y_salidas.html" class="no-ch">Dando formato a las entradas y salidas</a></li>
+      </ul>
+      </li>
+      <li><a href="ficheros_de_acceso_aleatorio.html" class="no-ch">Ficheros de acceso aleatorio</a></li>
+      <li><a href="copia_de_archivos_y_gestin_de_directorios.html" class="no-ch">Copia de archivos y gestión de directorios</a></li>
+      <li><a href="conexiones_de_red.html" class="no-ch">Conexiones de red</a></li>
+   </ul>
+   </li>
+   <li><a href="repaso_xml.html" class="daddy">Repaso XML</a>
+   <ul class="other-section">
+      <li><a href="xml_es_jerrquico.html" class="no-ch">XML es jerárquico</a></li>
+      <li><a href="caractersticas_y_etiquetas.html" class="no-ch">Características y etiquetas</a></li>
+      <li><a href="declaracin_de_un_documento.html" class="no-ch">Declaración de un documento</a></li>
+      <li><a href="xml__bien_formado_y_vlido.html" class="no-ch">XML  "bien formado" y "válido"</a></li>
+      <li><a href="espacios_de_nombres.html" class="no-ch">Espacios de nombres</a></li>
+      <li><a href="tecnologas_xml.html" class="no-ch">Tecnologías XML</a></li>
+      <li><a href="herramientas_de_edicin.html" class="no-ch">Herramientas de edición</a></li>
+      <li><a href="esquemas_xml.html" class="daddy">Esquemas XML</a>
+      <ul class="other-section">
+         <li><a href="dtd.html" class="no-ch">DTD</a></li>
+         <li><a href="xmlschema.html" class="no-ch">XMLSchema</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="repaso_json.html" class="daddy">Repaso JSON</a>
+   <ul class="other-section">
+      <li><a href="conceptos_y_terminologa.html" class="no-ch">Conceptos y terminología</a></li>
+      <li><a href="estructuras_json.html" class="daddy">Estructuras JSON</a>
+      <ul class="other-section">
+         <li><a href="objetos_de_datos_clavevalor.html" class="no-ch">Objetos de datos (clave:valor)</a></li>
+         <li><a href="arrays_de_datos.html" class="no-ch">Arrays de datos</a></li>
+      </ul>
+      </li>
+      <li><a href="json_schema.html" class="no-ch">JSON Schema</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="parsing_y_binding_de_xml_con_java.html" class="current-page-parent daddy">Parsing y binding de XML con Java</a>
+   <ul>
+      <li><a href="marshallingunmarshalling_xml_con_java.html" class="no-ch">Marshalling/unmarshalling XML con Java</a></li>
+      <li id="active"><a href="procesado_de_xml_con_java_parsing.html" class="active daddy">Procesado de XML con Java: Parsing</a>
+      <ul>
+         <li><a href="enfoque_dom.html" class="no-ch">Enfoque DOM</a></li>
+         <li><a href="enfoque_sax.html" class="no-ch">Enfoque SAX</a></li>
+         <li><a href="enfoques_hbridos.html" class="no-ch">Enfoques híbridos</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="conversin_de_xml_a_otros_formatos.html" class="daddy">Conversión de XML a otros formatos</a>
+   <ul class="other-section">
+      <li><a href="dehacia_excel.html" class="no-ch">De/hacia Excel</a></li>
+      <li><a href="dehacia_powerpoint.html" class="no-ch">De/hacia PowerPoint</a></li>
+      <li><a href="dehacia_word.html" class="no-ch">De/hacia Word</a></li>
+      <li><a href="pdf.html" class="no-ch">PDF</a></li>
+   </ul>
+   </li>
+   <li><a href="excepciones_deteccin_y_tratamiento.html" class="daddy">Excepciones, detección y tratamiento.</a>
+   <ul class="other-section">
+      <li><a href="deteccin_de_excepciones_en_java.html" class="no-ch">Detección de excepciones en Java</a></li>
+      <li><a href="excepciones_en_nuestros_componentes.html" class="no-ch">Excepciones en nuestros componentes</a></li>
+   </ul>
+   </li>
+   <li><a href="pruebas_y_documentacin.html" class="daddy">Pruebas y documentación</a>
+   <ul class="other-section">
+      <li><a href="junit.html" class="no-ch">jUnit</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="marshallingunmarshalling_xml_con_java.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="enfoque_dom.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Procesado de XML con Java: Parsing</h1></header>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id34">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Recuerda...</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta34_86_2" class="block iDevice_content">
+<p>XML, es un metalenguaje extensible de etiquetas desarrollado por el World Wide Web Consortium (W3C) que  permite definir la gramática de lenguajes específicos. Por lo tanto XML no es realmente un lenguaje en particular, sino una manera de definir lenguajes para diferentes necesidades. Algunos de estos lenguajes que usan XML para su definición son XHTML, SVG, MathML.</p>
+<p>XML no ha nacido sólo para su aplicación en Internet, sino que se propone como un estándar para el intercambio de información estructurada entre diferentes plataformas. Se puede usar en bases de datos, editores de texto, hojas de cálculo y casi cualquier cosa imaginable. Tiene un papel muy importante en la actualidad ya que permite la compatibilidad entre sistemas para compartir la información de una manera segura, fiable y fácil.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id35">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">¿Qué vamos a aprender en este apartado?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta35_87_2" class="block iDevice_content">
+<div class="content-multigroup-wrapper content-multigroup-0">
+<h3 id="Estandares_de_parseo" class="title">Estándares de parseo</h3>
+<div class="field field-type-text field-field-pauta-simple-mensaje">
+<div class="field-items">
+<div class="field-item odd">
+<p><strong>DOM</strong> y <strong>SAX</strong> para analizar los documentos XML</p>
+</div>
+</div>
+</div>
+<div class="field field-type-text field-field-pauta-simple-descripcion">
+<div class="field-items">
+<div class="field-item odd">
+<p>Se recomienda utilizar el estándar <strong>DOM</strong> con documentos XML pequeños, cuando queramos analizar el documento múltiples veces o editarlo, ya que se encuentra cargado en memoria, o queramos generar un documento XML desde cero.</p>
+<p>Se recomienda utlizar el estándar <strong>SAX</strong> con documentos XML grandes, cuando queramos analizar el documento una sola vez o por partes (capturando los elementos importantes). También se usa cuando no se requiere una modificación estructural.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-multigroup-wrapper content-multigroup-1">
+<h3 id="Analisis_del_XML" class="title">Análisis del XML</h3>
+<div class="field field-type-text field-field-pauta-simple-mensaje">
+<div class="field-items">
+<div class="field-item odd">
+<p>Usar las librerías <strong>Xerces2</strong>, <strong>JDOM</strong> y <strong>JAXP</strong> para el procesamiento de documentos XML</p>
+</div>
+</div>
+</div>
+<div class="field field-type-text field-field-pauta-simple-descripcion">
+<div class="field-items">
+<div class="field-item odd">
+<p>Es necesario tener claro qué librería se adapta con mayor facilidad a nuestras necesidades.</p>
+<p><strong>Xerces2</strong> permite el procesamiento de documentos XML tanto con el estándar DOM o con el estándar SAX, y errores. Además, integra a otras librerías independientes de parseado.</p>
+<p><strong>JDOM</strong> permite leer, escribir, crear y manipular ficheros XML de forma sencilla e intuitiva. Está totalmente programada en Java, lo que le permite utilizar las capacidades particulares del lenguaje, simplificando significativamente su manejo para programadores expertos en Java. Se basa en el procesamiento de un documento XML y la construcción de un árbol. Una vez construido el árbol se puede acceder directamente a cualquiera de sus componentes.</p>
+<p><strong>JAXP</strong> (Java API for XML Processing) permite procesar tanto el estándar DOM como el estándar SAX. Este API está diseñado para ser flexible y uniformar el desarrollo de aplicaciones Java con Xml. Además, proporciona una capa intermedia que nos permite usar cualquier analizador XML compatible dentro de nuestra aplicación, reduciendo el acoplamiento de los coponentes de la aplicación con la implementación del analizador.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-multigroup-wrapper content-multigroup-2">
+<h3 id="Serializacion_del_XML" class="title">Serialización del XML</h3>
+<div class="field field-type-text field-field-pauta-simple-mensaje">
+<div class="field-items">
+<div class="field-item odd">
+<p>Usar las librerías <strong>Xerces2, Xstream </strong>o<strong> JAXB</strong> para los procesos de serialización</p>
+</div>
+</div>
+</div>
+<div class="field field-type-text field-field-pauta-simple-descripcion">
+<div class="field-items">
+<div class="field-item odd">
+<p>Se recomienda utilizar las librerías <strong>Xerces2, Xstream </strong>o<strong> JAXB</strong> para serializar objetos Java en un medio de almacenamiento, como puede ser un archivo o un buffer de memoria, con el fin de transmitirlo a través de una conexión en red, ya sea como una serie de bytes o usando un formato humanamente más legible, como XML o JSON, entre otros. La serie de bytes o el formato empleado para la transmisión pueden ser usados para crear un nuevo objeto que es idéntico en todo al original, incluido su estado interno.  Por tanto, el nuevo objeto es un CLON del original.</p>
+<p>La serialización es un mecanismo ampliamente usado para transportar objetos a través de una red, para hacer persistente un objeto en un archivo o base de datos, o para distribuir objetos idénticos a varias aplicaciones o localizaciones. EL XML es un formato estándar de documentos basados en texto para almacenar datos legibles por aplicaciones que proporciona un fácil procesamiento. Para llevar a cabo este proceso se han de definir mediante reglas tanto el proceso de transformación de objetos Java a XML como el proceso de transformación inversa.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-multigroup-wrapper content-multigroup-3">
+<h3 id="Transformaciones_sobre_XML" class="title">Transformaciones sobre XML</h3>
+<div class="field field-type-text field-field-pauta-simple-mensaje">
+<div class="field-items">
+<div class="field-item odd">
+<p>Usar la librería <strong>Xalan</strong> para el tratamiento de las transformaciones en archivos XML</p>
+</div>
+</div>
+</div>
+<div class="field field-type-text field-field-pauta-simple-descripcion">
+<div class="field-items">
+<div class="field-item odd">
+<p>En ocasiones es necesario permitir realizar transformaciones de documentos XML con lenguajes basados en XSL (XSLT, XPath). Un documento XML puede ser transformado en distintos formatos, como HTML, o en otro documento XML. Para realizar estas transformaciones basadas en XSLT, se recomienda el empleo de la librería <strong>Xalan</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-multigroup-wrapper content-multigroup-4">
+<h3 id="Vinculacion_con_objetos_Java" class="title">Vinculación con objetos Java</h3>
+<div class="field field-type-text field-field-pauta-simple-mensaje">
+<div class="field-items">
+<div class="field-item odd">
+<p>Emplear las librerías<strong> JiXB, JAXB</strong> o <strong>XMLBeans</strong> para vincular los documentos XML con objetos Java</p>
+</div>
+</div>
+</div>
+<div class="field field-type-text field-field-pauta-simple-descripcion">
+<div class="field-items">
+<div class="field-item odd">
+<p>Usando <strong>JiBX, JAXB o XMLBeans </strong>podemos vincular datos en XML con objetos Java. Con cualquiera de las tres librerías podemos, o partir de un esquema XML generar código Java. Se recomienda utilizar una de estas tres librerías para la vinculación de los documentos XML con los objetos Java.</p>
+<p> Fuente: <a href="http://www.juntadeandalucia.es/servicios/madeja/contenido/libro-pautas/348">http://www.juntadeandalucia.es/servicios/madeja/contenido/libro-pautas/348</a></p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="marshallingunmarshalling_xml_con_java.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="enfoque_dom.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="tknika_js.js"></script></body></html>
