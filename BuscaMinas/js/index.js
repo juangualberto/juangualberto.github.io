@@ -64,7 +64,7 @@ $(function() {
 
     $("#menu_partida_facil").click(function(){     
         juego.setTablero("#panel_partida_facil");
-        juego.partida(5,5,1);
+        juego.partida(5,5,5);
         setDisparos();
     });
 
