@@ -349,11 +349,15 @@ Ejemplos de foros son:
   * Neceitamos aplicar técnicas de IA para manipular volúmenes tan grandes de datos que son incongruentes para los humanos
 * Ejemplo de aplicación: La pila ELK
 
+---
+
 ### La pila ELK
 
 * Elasticsearch es un motor de búsqueda escrito en Java que funciona sobre Apache Lucene, una API para un motor de búsqueda de alto rendimiento. Elasticsearch nos permite acceder a Lucene como una API REST distribuida y escalable, en vez de con complicadas llamadas en Java, así los verbos HTTP GET, POST, PUT, DELETE, por ejemplo, nos servirán para consultar, crear, actualizar y borrar documentos JSON en nuestra base de datos NoSQL.
 
 * Elasticsearch no es una aplicación para ejecutar como un único demonio (aunque puede hacerse) sino distribuida. Así, cada instancia de Elastic que corre en un servidor será un **nodo**. Existen diferentes tipos de nodos.
+
+---
 
 ### Los nodos en Elastic 
 
@@ -361,6 +365,8 @@ Ejemplos de foros son:
 * Los nodos de datos o **data nodes** son los encargados de llevar a cabo las operaciones CRUD (Create Read Update Delete) y también actúan en las búsquedas y agregaciones de datos.
 * Los nodos encargados de la ingesta de datos son los **nodos de ingesta**. Llamamos *ingesta* al proceso de enriquecer y transformar información antes de indexarla. Aunque los datos pueden provenir de una tubería (*pipeline*) o bien de ficheros estáticos, el sentido de estos nodos es gestionar la información que llega desde las diferentes fuentes o *pipelines* (tuberías) en vivo.
 * Los nodos *ML* o **machine learning** son los encargados de ejecutar tareas de aprendizaje automático, aunque para esta característica deberemos adquirir una licencia previo pago.
+
+--- 
 
 # ¡Gracias!
 
@@ -371,3 +377,4 @@ Ejemplos de foros son:
 #### IES Virgen del Carmen
 
 Abril 2023
+
