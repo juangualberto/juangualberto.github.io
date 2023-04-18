@@ -177,12 +177,13 @@ Existen multitud de herramientas como:
 
 ### Herramientas para analizar redes (CLI)
 
-1. [amass](https://github.com/OWASP/Amass): Busca subdominios dentro del indicado.
-2. [TheHarvester](https://github.com/laramies/theHarvester): Muy usado por el *red team* para reconocimiento.
-3. [Photon](https://github.com/s0md3v/Photon): Una araña con *superpoderes*, descarga sitios webs completos rápidamente y nos extrae API KEYs.
-4. [Carbon14](https://github.com/Lazza/Carbon14): Nos dice la edad de una Web.
-5. [EyeWhitness](https://github.com/FortyNorthSecurity/EyeWitness): Para recolectar información de sitios web que normalmente no vemos a simple vista.
-6. [Rastrea2r](https://github.com/rastrea2r/rastrea2r): Para comprobar si nuestro sitio Web puede estar comprometido.
+1. [Metagoofil](https://github.com/opsdisk/metagoofil): Busca documentos públicos en determinados sitios Web. Después podemos buscar metadatos.
+2. [amass](https://github.com/OWASP/Amass): Busca subdominios dentro del indicado.
+3. [TheHarvester](https://github.com/laramies/theHarvester): Muy usado por el *red team* para reconocimiento.
+4. [Photon](https://github.com/s0md3v/Photon): Una araña con *superpoderes*, descarga sitios webs completos rápidamente y nos extrae API KEYs.
+5. [Carbon14](https://github.com/Lazza/Carbon14): Nos dice la edad de una Web.
+6. [EyeWhitness](https://github.com/FortyNorthSecurity/EyeWitness): Para recolectar información de sitios web que normalmente no vemos a simple vista.
+7. [Rastrea2r](https://github.com/rastrea2r/rastrea2r): Para comprobar si nuestro sitio Web puede estar comprometido.
 
 ---
 
