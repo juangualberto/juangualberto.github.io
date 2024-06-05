@@ -1,0 +1,12 @@
+[
+    {
+        "titulo": "Scraper para duckduckgo dorks",
+        "texto": "OSINT-dork-scraper.",
+        "url": "https://github.com/juangualberto/osint-dork-scrapper"
+    },
+    {
+        "titulo": "Algunos scripts útiles para el homelab",
+        "texto": "Ciber recetas.",
+        "url": "https://github.com/juangualberto/cyberrecipes"
+    }
+]
