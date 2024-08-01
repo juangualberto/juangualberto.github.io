@@ -1,0 +1,7 @@
+[
+    {
+        "titulo": "Bases de datos timeseries para el IoT.",
+        "texto": "Arduino sensors, Mosquitto y InfluxDB",
+        "url": "https://github.com/juangualberto/adt03-timeseriesdb"
+    }
+]

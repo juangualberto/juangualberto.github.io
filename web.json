@@ -3,5 +3,10 @@
         "titulo": "Tutorial HTML5, CSS y JS.",
         "texto": "Buscaminas en HTML5",
         "url": "https://github.com/juangualberto/tutorial-html5js"
+    },
+    {
+        "titulo": "Juego terminado.",
+        "texto": "Buscaminas en HTML5",
+        "url": "https://juangualberto.github.io/BuscaMinas/index.html"
     }
 ]
