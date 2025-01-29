@@ -20,11 +20,11 @@ style: |
 
 ## Open Source INTelligence
 
-### I Jornadas de Ciberseguridad  
+### II Jornadas de Ciberseguridad  
 
 #### IES Virgen del Carmen
 
-Abril 2023
+Enero 2025 (v2)
 
 ---
 
