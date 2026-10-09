@@ -140,7 +140,7 @@ title: "Recursos para Bachillerato | Ciencias y PAU Andalucía"
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <nav class="navbar navbar-expand-sm site-nav sticky-top" aria-label="Navegación principal">
     <div class="container py-1">
-      <a class="navbar-brand text-white" href="#inicio"><span class="brand-mark" aria-hidden="true">B</span><span>Bachillerato<span style="color:#b7b4ff">.</span>recursos</span></a>
+      <a class="navbar-brand text-white" href="#inicio"><span class="brand-mark" aria-hidden="true">B</span><span>Recursos Educativos<span style="color:#b7b4ff">: </span> bachillerato Andalucía</span></a>
       <div class="d-flex align-items-center gap-2 ms-auto">
         <a class="nav-link d-none d-sm-inline-block" href="#recursos">Materias</a>
         <a class="nav-link d-none d-sm-inline-block" href="#pau-andalucia">PAU Andalucía</a>
@@ -152,7 +152,7 @@ title: "Recursos para Bachillerato | Ciencias y PAU Andalucía"
     <header class="hero" id="inicio">
       <div class="container hero-inner">
         <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Ciencias · Tecnología · Salud · Andalucía</span>
-        <h1>Aprender mejor.<br><em>Llegar más lejos.</em></h1>
+        <h1>Recursos para Bachillerato.<br><em>Webs interesantes para mejorar tus notas.</em></h1>
         <p class="hero-lead">Una selección de webs, apuntes, vídeos, simulaciones y exámenes para <strong class="text-white">1.º y 2.º de Bachillerato</strong>. Encuentra rápidamente el recurso adecuado y prepara también la PAU de Andalucía.</p>
         <div class="hero-actions">
           <a class="btn btn-hero btn-primary-hero" href="#recursos">Explorar recursos <span aria-hidden="true">↓</span></a>
