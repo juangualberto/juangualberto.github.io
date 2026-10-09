@@ -2,7 +2,6 @@
 layout: null
 title: "Recursos para Bachillerato | Ciencias y PAU Andalucía"
 ---
-<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
